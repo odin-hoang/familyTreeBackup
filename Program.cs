@@ -8,6 +8,7 @@ namespace WinformFamilyTree
 {
     internal static class Program
     {
+        /// Test push
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
