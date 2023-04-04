@@ -54,7 +54,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TreeClasses\memberClass.cs" />
+    <Compile Include="TreeClasses\MemberClass.cs" />
     <EmbeddedResource Include="FamilyTree.resx">
       <DependentUpon>FamilyTree.cs</DependentUpon>
     </EmbeddedResource>
