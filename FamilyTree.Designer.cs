@@ -37,12 +37,13 @@ namespace WinformFamilyTree
             this.memberListButton = new System.Windows.Forms.Button();
             this.shareButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
-            this.searchLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userAvatar = new System.Windows.Forms.PictureBox();
             this.userControl41 = new WinformFamilyTree.UserControl4();
             this.userControl31 = new WinformFamilyTree.UserControl3();
             this.userControl21 = new WinformFamilyTree.UserControl2();
             this.userControl11 = new WinformFamilyTree.UserControl1();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,16 +105,16 @@ namespace WinformFamilyTree
             this.searchBox.DoubleClick += new System.EventHandler(this.searchBox_DoubleClick);
             this.searchBox.Leave += new System.EventHandler(this.searchBox_LostFocus);
             // 
-            // searchLabel
+            // pictureBox1
             // 
-            this.searchLabel.AutoSize = true;
-            this.searchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchLabel.Location = new System.Drawing.Point(1049, 30);
-            this.searchLabel.Name = "searchLabel";
-            this.searchLabel.Size = new System.Drawing.Size(91, 25);
-            this.searchLabel.TabIndex = 2;
-            this.searchLabel.Text = "Tìm kiếm";
-            this.searchLabel.Click += new System.EventHandler(this.label1_Click);
+            this.pictureBox1.ErrorImage = global::WinformFamilyTree.Properties.Resources.search;
+            this.pictureBox1.Image = global::WinformFamilyTree.Properties.Resources.search;
+            this.pictureBox1.Location = new System.Drawing.Point(1110, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // userAvatar
             // 
@@ -159,12 +160,12 @@ namespace WinformFamilyTree
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1422, 977);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.userControl41);
             this.Controls.Add(this.userControl31);
             this.Controls.Add(this.userControl21);
             this.Controls.Add(this.userControl11);
             this.Controls.Add(this.userAvatar);
-            this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.shareButton);
             this.Controls.Add(this.memberListButton);
@@ -174,6 +175,7 @@ namespace WinformFamilyTree
             this.Name = "familyTree";
             this.Text = "Family Tree";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -187,12 +189,12 @@ namespace WinformFamilyTree
         private Button memberListButton;
         private Button shareButton;
         private TextBox searchBox;
-        private Label searchLabel;
         private PictureBox userAvatar;
         private UserControl1 userControl11;
         private UserControl2 userControl21;
         private UserControl3 userControl31;
         private UserControl4 userControl41;
+        private PictureBox pictureBox1;
     }
 }
 

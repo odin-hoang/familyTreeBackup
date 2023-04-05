@@ -29,10 +29,6 @@ namespace WinformFamilyTree
         }
 
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void searchBox_TextChanged(object sender, EventArgs e)
         {

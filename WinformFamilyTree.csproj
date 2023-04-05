@@ -137,5 +137,8 @@
   <ItemGroup>
     <None Include="Resources\chu-chim-canh-cut-con-nhin-cute-de-thuong_113124382.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
