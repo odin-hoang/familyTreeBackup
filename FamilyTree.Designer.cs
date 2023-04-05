@@ -38,14 +38,14 @@ namespace WinformFamilyTree
             this.shareButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.searchLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.userAvatar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.userAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // homeScreenButton
             // 
             this.homeScreenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeScreenButton.Location = new System.Drawing.Point(77, 133);
+            this.homeScreenButton.Location = new System.Drawing.Point(103, 269);
             this.homeScreenButton.Name = "homeScreenButton";
             this.homeScreenButton.Size = new System.Drawing.Size(227, 46);
             this.homeScreenButton.TabIndex = 0;
@@ -56,7 +56,7 @@ namespace WinformFamilyTree
             // viewBiographyButton
             // 
             this.viewBiographyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewBiographyButton.Location = new System.Drawing.Point(77, 199);
+            this.viewBiographyButton.Location = new System.Drawing.Point(103, 335);
             this.viewBiographyButton.Name = "viewBiographyButton";
             this.viewBiographyButton.Size = new System.Drawing.Size(227, 46);
             this.viewBiographyButton.TabIndex = 0;
@@ -67,7 +67,7 @@ namespace WinformFamilyTree
             // listMemberButton
             // 
             this.listMemberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listMemberButton.Location = new System.Drawing.Point(77, 265);
+            this.listMemberButton.Location = new System.Drawing.Point(103, 401);
             this.listMemberButton.Name = "listMemberButton";
             this.listMemberButton.Size = new System.Drawing.Size(227, 46);
             this.listMemberButton.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace WinformFamilyTree
             // shareButton
             // 
             this.shareButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shareButton.Location = new System.Drawing.Point(77, 328);
+            this.shareButton.Location = new System.Drawing.Point(103, 464);
             this.shareButton.Name = "shareButton";
             this.shareButton.Size = new System.Drawing.Size(227, 46);
             this.shareButton.TabIndex = 0;
@@ -107,20 +107,23 @@ namespace WinformFamilyTree
             this.searchLabel.Text = "Tìm kiếm";
             this.searchLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pictureBox1
+            // userAvatar
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(132, 52);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(109, 50);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.userAvatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userAvatar.Image = global::WinformFamilyTree.Properties.Resources.chu_chim_canh_cut_con_nhin_cute_de_thuong_113124382;
+            this.userAvatar.Location = new System.Drawing.Point(114, 45);
+            this.userAvatar.Name = "userAvatar";
+            this.userAvatar.Size = new System.Drawing.Size(200, 200);
+            this.userAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.userAvatar.TabIndex = 3;
+            this.userAvatar.TabStop = false;
             // 
             // familyTree
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1422, 977);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.userAvatar);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.shareButton);
@@ -131,7 +134,7 @@ namespace WinformFamilyTree
             this.Name = "familyTree";
             this.Text = "Family Tree";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,7 +148,7 @@ namespace WinformFamilyTree
         private Button shareButton;
         private TextBox searchBox;
         private Label searchLabel;
-        private PictureBox pictureBox1;
+        private PictureBox userAvatar;
     }
 }
 
