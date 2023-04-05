@@ -38,66 +38,88 @@ namespace WinformFamilyTree
             this.shareButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.userAvatar = new System.Windows.Forms.PictureBox();
-            this.userControl41 = new WinformFamilyTree.UserControl4();
-            this.userControl31 = new WinformFamilyTree.UserControl3();
-            this.userControl21 = new WinformFamilyTree.UserControl2();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.userNameLabel = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.userControl11 = new WinformFamilyTree.UserControl1();
+            this.userControl21 = new WinformFamilyTree.UserControl2();
+            this.userControl31 = new WinformFamilyTree.UserControl3();
+            this.userControl41 = new WinformFamilyTree.UserControl4();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userAvatar)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // homeScreenButton
             // 
-            this.homeScreenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeScreenButton.Location = new System.Drawing.Point(35, 254);
+            this.homeScreenButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.homeScreenButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeScreenButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.homeScreenButton.Location = new System.Drawing.Point(4, 113);
+            this.homeScreenButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.homeScreenButton.Name = "homeScreenButton";
-            this.homeScreenButton.Size = new System.Drawing.Size(227, 46);
+            this.homeScreenButton.Size = new System.Drawing.Size(290, 49);
             this.homeScreenButton.TabIndex = 0;
             this.homeScreenButton.Text = "Màn hình chính";
-            this.homeScreenButton.UseVisualStyleBackColor = true;
+            this.homeScreenButton.UseVisualStyleBackColor = false;
             this.homeScreenButton.Click += new System.EventHandler(this.homeScreenButton_Click);
             // 
             // viewBiographyButton
             // 
-            this.viewBiographyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewBiographyButton.Location = new System.Drawing.Point(35, 320);
+            this.viewBiographyButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.viewBiographyButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewBiographyButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.viewBiographyButton.Location = new System.Drawing.Point(4, 3);
+            this.viewBiographyButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.viewBiographyButton.Name = "viewBiographyButton";
-            this.viewBiographyButton.Size = new System.Drawing.Size(227, 46);
+            this.viewBiographyButton.Size = new System.Drawing.Size(290, 49);
             this.viewBiographyButton.TabIndex = 0;
             this.viewBiographyButton.Text = "Xem tiểu sử";
-            this.viewBiographyButton.UseVisualStyleBackColor = true;
+            this.viewBiographyButton.UseVisualStyleBackColor = false;
             this.viewBiographyButton.Click += new System.EventHandler(this.viewBiographyButton_Click);
             // 
             // memberListButton
             // 
-            this.memberListButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memberListButton.Location = new System.Drawing.Point(35, 386);
+            this.memberListButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.memberListButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memberListButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.memberListButton.Location = new System.Drawing.Point(4, 58);
+            this.memberListButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.memberListButton.Name = "memberListButton";
-            this.memberListButton.Size = new System.Drawing.Size(227, 46);
+            this.memberListButton.Size = new System.Drawing.Size(290, 49);
             this.memberListButton.TabIndex = 0;
             this.memberListButton.Text = "Danh sách thành viên";
-            this.memberListButton.UseVisualStyleBackColor = true;
+            this.memberListButton.UseVisualStyleBackColor = false;
             this.memberListButton.Click += new System.EventHandler(this.memberListButton_Click);
             // 
             // shareButton
             // 
-            this.shareButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shareButton.Location = new System.Drawing.Point(35, 449);
+            this.shareButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.shareButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shareButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.shareButton.Location = new System.Drawing.Point(4, 168);
+            this.shareButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.shareButton.Name = "shareButton";
-            this.shareButton.Size = new System.Drawing.Size(227, 46);
+            this.shareButton.Size = new System.Drawing.Size(290, 49);
             this.shareButton.TabIndex = 0;
             this.shareButton.Text = "Chia sẻ cây";
-            this.shareButton.UseVisualStyleBackColor = true;
+            this.shareButton.UseVisualStyleBackColor = false;
             this.shareButton.Click += new System.EventHandler(this.shareButton_Click);
             // 
             // searchBox
             // 
-            this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBox.ForeColor = System.Drawing.Color.Silver;
-            this.searchBox.Location = new System.Drawing.Point(1146, 27);
+            this.searchBox.Location = new System.Drawing.Point(1148, 53);
+            this.searchBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(235, 30);
+            this.searchBox.Size = new System.Drawing.Size(250, 34);
             this.searchBox.TabIndex = 1;
             this.searchBox.Text = "Nhập tên thành viên";
             this.searchBox.Click += new System.EventHandler(this.searchBox_Click);
@@ -107,78 +129,178 @@ namespace WinformFamilyTree
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.ErrorImage = global::WinformFamilyTree.Properties.Resources.search;
             this.pictureBox1.Image = global::WinformFamilyTree.Properties.Resources.search;
-            this.pictureBox1.Location = new System.Drawing.Point(1110, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(1114, 57);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 7, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // userAvatar
+            // tableLayoutPanel1
             // 
-            this.userAvatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userAvatar.Image = global::WinformFamilyTree.Properties.Resources.chu_chim_canh_cut_con_nhin_cute_de_thuong_113124382;
-            this.userAvatar.Location = new System.Drawing.Point(46, 30);
-            this.userAvatar.Name = "userAvatar";
-            this.userAvatar.Size = new System.Drawing.Size(200, 200);
-            this.userAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.userAvatar.TabIndex = 3;
-            this.userAvatar.TabStop = false;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.ColumnCount = 9;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 6, 3);
+            this.tableLayoutPanel1.Controls.Add(this.searchBox, 7, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 6, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 9;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1422, 977);
+            this.tableLayoutPanel1.TabIndex = 9;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // userControl41
+            // pictureBox2
             // 
-            this.userControl41.Location = new System.Drawing.Point(285, 63);
-            this.userControl41.Name = "userControl41";
-            this.userControl41.Size = new System.Drawing.Size(1024, 900);
-            this.userControl41.TabIndex = 7;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::WinformFamilyTree.Properties.Resources.chu_chim_canh_cut_con_nhin_cute_de_thuong_113124382;
+            this.pictureBox2.Location = new System.Drawing.Point(70, 50);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(194, 194);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
-            // userControl31
+            // userNameLabel
             // 
-            this.userControl31.Location = new System.Drawing.Point(285, 63);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(1024, 900);
-            this.userControl31.TabIndex = 6;
+            this.userNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel2.SetColumnSpan(this.userNameLabel, 3);
+            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userNameLabel.Location = new System.Drawing.Point(20, 247);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(294, 50);
+            this.userNameLabel.TabIndex = 1;
+            this.userNameLabel.Text = "Ricardo Penguin";
+            this.userNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // userControl21
+            // flowLayoutPanel1
             // 
-            this.userControl21.Location = new System.Drawing.Point(285, 63);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(1024, 900);
-            this.userControl21.TabIndex = 5;
+            this.tableLayoutPanel2.SetColumnSpan(this.flowLayoutPanel1, 3);
+            this.flowLayoutPanel1.Controls.Add(this.viewBiographyButton);
+            this.flowLayoutPanel1.Controls.Add(this.memberListButton);
+            this.flowLayoutPanel1.Controls.Add(this.homeScreenButton);
+            this.flowLayoutPanel1.Controls.Add(this.shareButton);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(20, 359);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(294, 528);
+            this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.flowLayoutPanel2, 2);
+            this.flowLayoutPanel2.Controls.Add(this.userControl41);
+            this.flowLayoutPanel2.Controls.Add(this.userControl31);
+            this.flowLayoutPanel2.Controls.Add(this.userControl21);
+            this.flowLayoutPanel2.Controls.Add(this.userControl11);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(373, 103);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.tableLayoutPanel1.SetRowSpan(this.flowLayoutPanel2, 5);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1026, 840);
+            this.flowLayoutPanel2.TabIndex = 3;
             // 
             // userControl11
             // 
-            this.userControl11.Location = new System.Drawing.Point(285, 63);
+            this.userControl11.Location = new System.Drawing.Point(3, 2721);
             this.userControl11.Name = "userControl11";
             this.userControl11.Size = new System.Drawing.Size(1024, 900);
-            this.userControl11.TabIndex = 4;
+            this.userControl11.TabIndex = 0;
+            // 
+            // userControl21
+            // 
+            this.userControl21.Location = new System.Drawing.Point(3, 1815);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(1024, 900);
+            this.userControl21.TabIndex = 1;
+            // 
+            // userControl31
+            // 
+            this.userControl31.Location = new System.Drawing.Point(3, 909);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(1024, 900);
+            this.userControl31.TabIndex = 2;
+            // 
+            // userControl41
+            // 
+            this.userControl41.Location = new System.Drawing.Point(3, 3);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(1024, 900);
+            this.userControl41.TabIndex = 3;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.tableLayoutPanel2.ColumnCount = 5;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel2, 5);
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 17F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 17F));
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.userNameLabel, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 1, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(33, 53);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel1.SetRowSpan(this.tableLayoutPanel2, 6);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(334, 890);
+            this.tableLayoutPanel2.TabIndex = 9;
             // 
             // familyTree
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1422, 977);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.userControl41);
-            this.Controls.Add(this.userControl31);
-            this.Controls.Add(this.userControl21);
-            this.Controls.Add(this.userControl11);
-            this.Controls.Add(this.userAvatar);
-            this.Controls.Add(this.searchBox);
-            this.Controls.Add(this.shareButton);
-            this.Controls.Add(this.memberListButton);
-            this.Controls.Add(this.viewBiographyButton);
-            this.Controls.Add(this.homeScreenButton);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "familyTree";
             this.Text = "Family Tree";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userAvatar)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -189,12 +311,17 @@ namespace WinformFamilyTree
         private Button memberListButton;
         private Button shareButton;
         private TextBox searchBox;
-        private PictureBox userAvatar;
-        private UserControl1 userControl11;
-        private UserControl2 userControl21;
-        private UserControl3 userControl31;
-        private UserControl4 userControl41;
         private PictureBox pictureBox1;
+        private TableLayoutPanel tableLayoutPanel1;
+        private PictureBox pictureBox2;
+        private Label userNameLabel;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private UserControl4 userControl41;
+        private UserControl3 userControl31;
+        private UserControl2 userControl21;
+        private UserControl1 userControl11;
+        private TableLayoutPanel tableLayoutPanel2;
     }
 }
 

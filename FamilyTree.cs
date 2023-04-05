@@ -20,6 +20,15 @@ namespace WinformFamilyTree
         private void Form1_Load(object sender, EventArgs e)
         {
             // Inital View is Home Screen 
+            tableLayoutPanel1.BackColor = Color.FromArgb(0, 0, 0, 0);
+            viewBiographyButton.FlatStyle = FlatStyle.Flat; 
+            viewBiographyButton.FlatAppearance.BorderSize = 0;
+            homeScreenButton.FlatStyle = FlatStyle.Flat;
+            homeScreenButton.FlatAppearance.BorderSize= 0;
+            memberListButton.FlatStyle = FlatStyle.Flat;
+            memberListButton.FlatAppearance.BorderSize = 0;
+            shareButton.FlatStyle = FlatStyle.Flat;
+            shareButton.FlatAppearance.BorderSize = 0;
             userControl11.Show();
             userControl21.Hide();
             userControl31.Hide();
@@ -109,6 +118,11 @@ namespace WinformFamilyTree
                 searchBox.Text = placeHolder;
                 searchBox.ForeColor = Color.Silver;
             }
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
