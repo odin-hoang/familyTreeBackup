@@ -36,5 +36,10 @@ namespace WinformFamilyTree
         {
 
         }
+
+        private void searchBox_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

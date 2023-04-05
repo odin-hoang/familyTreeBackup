@@ -45,7 +45,7 @@ namespace WinformFamilyTree
             // homeScreenButton
             // 
             this.homeScreenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeScreenButton.Location = new System.Drawing.Point(103, 269);
+            this.homeScreenButton.Location = new System.Drawing.Point(35, 254);
             this.homeScreenButton.Name = "homeScreenButton";
             this.homeScreenButton.Size = new System.Drawing.Size(227, 46);
             this.homeScreenButton.TabIndex = 0;
@@ -56,7 +56,7 @@ namespace WinformFamilyTree
             // viewBiographyButton
             // 
             this.viewBiographyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewBiographyButton.Location = new System.Drawing.Point(103, 335);
+            this.viewBiographyButton.Location = new System.Drawing.Point(35, 320);
             this.viewBiographyButton.Name = "viewBiographyButton";
             this.viewBiographyButton.Size = new System.Drawing.Size(227, 46);
             this.viewBiographyButton.TabIndex = 0;
@@ -67,7 +67,7 @@ namespace WinformFamilyTree
             // listMemberButton
             // 
             this.listMemberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listMemberButton.Location = new System.Drawing.Point(103, 401);
+            this.listMemberButton.Location = new System.Drawing.Point(35, 386);
             this.listMemberButton.Name = "listMemberButton";
             this.listMemberButton.Size = new System.Drawing.Size(227, 46);
             this.listMemberButton.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace WinformFamilyTree
             // shareButton
             // 
             this.shareButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shareButton.Location = new System.Drawing.Point(103, 464);
+            this.shareButton.Location = new System.Drawing.Point(35, 449);
             this.shareButton.Name = "shareButton";
             this.shareButton.Size = new System.Drawing.Size(227, 46);
             this.shareButton.TabIndex = 0;
@@ -95,6 +95,7 @@ namespace WinformFamilyTree
             this.searchBox.Size = new System.Drawing.Size(235, 30);
             this.searchBox.TabIndex = 1;
             this.searchBox.Text = "Nhập tên thành viên";
+            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
             // searchLabel
             // 
@@ -111,7 +112,7 @@ namespace WinformFamilyTree
             // 
             this.userAvatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.userAvatar.Image = global::WinformFamilyTree.Properties.Resources.chu_chim_canh_cut_con_nhin_cute_de_thuong_113124382;
-            this.userAvatar.Location = new System.Drawing.Point(114, 45);
+            this.userAvatar.Location = new System.Drawing.Point(46, 30);
             this.userAvatar.Name = "userAvatar";
             this.userAvatar.Size = new System.Drawing.Size(200, 200);
             this.userAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
