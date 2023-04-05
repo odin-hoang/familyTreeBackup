@@ -38,6 +38,8 @@ namespace WinformFamilyTree
             this.shareButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.searchLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // homeScreenButton
@@ -105,11 +107,20 @@ namespace WinformFamilyTree
             this.searchLabel.Text = "Tìm kiếm";
             this.searchLabel.Click += new System.EventHandler(this.label1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(132, 52);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(109, 50);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // familyTree
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1422, 977);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.shareButton);
@@ -120,6 +131,7 @@ namespace WinformFamilyTree
             this.Name = "familyTree";
             this.Text = "Family Tree";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,6 +145,7 @@ namespace WinformFamilyTree
         private Button shareButton;
         private TextBox searchBox;
         private Label searchLabel;
+        private PictureBox pictureBox1;
     }
 }
 
