@@ -78,5 +78,71 @@ namespace WinformFamilyTree.TreeClasses
             finally { conn.Close(); }
             return isSuccess;
         }
+        // Function for Update data to database
+        public bool Update(MemberClass c)
+        {
+            // Creating a default return type and setting its value to false
+            bool isSuccess = false;
+            // Step 1: Database connection
+            SqlConnection conn = new SqlConnection(myConnectionString);
+            try
+            {
+                conn.Open();
+                // Creating SQL Command using sql and conn
+                string sql = "UPDATE tbl_member " +
+                    "SET FirstName = @FirstName," +
+                    "LastName = @LastName," +
+                    "Gender = @Gender," +
+                    "DateOfBirth = @DateOfBirth," +
+                    "DateOfDeath = @DateOfDeath, " +
+                    "PlaceOfOrigin = @PlaceOfOrigin, " +
+                    "Biography = @Biography) " +
+                    "WHERE " +
+                    "ID = @ID";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
+                cmd.Parameters.AddWithValue("@LastName", c.LastName);
+                cmd.Parameters.AddWithValue("@Gender", c.Gender);
+                cmd.Parameters.AddWithValue("@DateOfBirth", c.DateOfBirth);
+                cmd.Parameters.AddWithValue("@DateOfDeath", c.DateOfDeath);
+                cmd.Parameters.AddWithValue("@PlaceOfOrigin", c.PlaceOfOrigin);
+                cmd.Parameters.AddWithValue("@Biography", c.Biography);
+                cmd.Parameters.AddWithValue("@ID", c.ID);
+                int rows = cmd.ExecuteNonQuery();
+                // If the query run sucessfully, the value of rows will be greater than 0 else its value will be 0
+                if (rows > 0) { isSuccess = true; }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally { conn.Close(); }
+            return isSuccess;
+        }
+        // Function for delete data to database
+        public bool Delete(MemberClass c)
+        {
+            // Creating a default return type and setting its value to false
+            bool isSuccess = false;
+            // Step 1: Database connection
+            SqlConnection conn = new SqlConnection(myConnectionString);
+            try
+            {
+                conn.Open();
+                // Creating SQL Command using sql and conn
+                string sql = "DELETE FROM tbl_member WHERE ID = @ID";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@ID", c.ID);
+                int rows = cmd.ExecuteNonQuery();
+                // If the query run sucessfully, the value of rows will be greater than 0 else its value will be 0
+                if (rows > 0) { isSuccess = true; }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally { conn.Close(); }
+            return isSuccess;
+        }
     }
 }
