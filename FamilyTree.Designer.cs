@@ -39,18 +39,18 @@ namespace WinformFamilyTree
             this.searchBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.userControl41 = new WinformFamilyTree.UserControl4();
+            this.userControl31 = new WinformFamilyTree.UserControl3();
+            this.userControl21 = new WinformFamilyTree.UserControl2();
+            this.userControl11 = new WinformFamilyTree.UserControl1();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.signUpPage2 = new WinformFamilyTree.SignUpPage();
+            this.firstPage1 = new WinformFamilyTree.FirstPage();
             this.signInPage1 = new WinformFamilyTree.SignInPage();
-            this.userControl41 = new WinformFamilyTree.UserControl4();
-            this.userControl31 = new WinformFamilyTree.UserControl3();
-            this.userControl21 = new WinformFamilyTree.UserControl2();
-            this.userControl11 = new WinformFamilyTree.UserControl1();
             this.signUpPage1 = new WinformFamilyTree.SignUpPage();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -181,13 +181,44 @@ namespace WinformFamilyTree
             this.flowLayoutPanel2.Controls.Add(this.userControl31);
             this.flowLayoutPanel2.Controls.Add(this.userControl21);
             this.flowLayoutPanel2.Controls.Add(this.userControl11);
-            this.flowLayoutPanel2.Controls.Add(this.signUpPage1);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(370, 100);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.tableLayoutPanel1.SetRowSpan(this.flowLayoutPanel2, 5);
             this.flowLayoutPanel2.Size = new System.Drawing.Size(1026, 560);
             this.flowLayoutPanel2.TabIndex = 3;
+            // 
+            // userControl41
+            // 
+            this.userControl41.Location = new System.Drawing.Point(0, 0);
+            this.userControl41.Margin = new System.Windows.Forms.Padding(0);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(1024, 900);
+            this.userControl41.TabIndex = 3;
+            // 
+            // userControl31
+            // 
+            this.userControl31.Location = new System.Drawing.Point(0, 900);
+            this.userControl31.Margin = new System.Windows.Forms.Padding(0);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(1024, 900);
+            this.userControl31.TabIndex = 2;
+            // 
+            // userControl21
+            // 
+            this.userControl21.Location = new System.Drawing.Point(0, 1800);
+            this.userControl21.Margin = new System.Windows.Forms.Padding(0);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(1024, 900);
+            this.userControl21.TabIndex = 1;
+            // 
+            // userControl11
+            // 
+            this.userControl11.Location = new System.Drawing.Point(0, 2700);
+            this.userControl11.Margin = new System.Windows.Forms.Padding(0);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(1024, 900);
+            this.userControl11.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -272,7 +303,8 @@ namespace WinformFamilyTree
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.signUpPage2);
+            this.panel1.Controls.Add(this.signUpPage1);
+            this.panel1.Controls.Add(this.firstPage1);
             this.panel1.Controls.Add(this.signInPage1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -281,64 +313,31 @@ namespace WinformFamilyTree
             this.panel1.Size = new System.Drawing.Size(1424, 985);
             this.panel1.TabIndex = 10;
             // 
-            // signUpPage2
+            // firstPage1
             // 
-            this.signUpPage2.AutoSize = true;
-            this.signUpPage2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.signUpPage2.Location = new System.Drawing.Point(0, 0);
-            this.signUpPage2.Margin = new System.Windows.Forms.Padding(0);
-            this.signUpPage2.Name = "signUpPage2";
-            this.signUpPage2.Size = new System.Drawing.Size(1424, 985);
-            this.signUpPage2.TabIndex = 10;
-            this.signUpPage2.Load += new System.EventHandler(this.signUpPage2_Load);
+            this.firstPage1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.firstPage1.Location = new System.Drawing.Point(0, 0);
+            this.firstPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.firstPage1.Name = "firstPage1";
+            this.firstPage1.Size = new System.Drawing.Size(1424, 985);
+            this.firstPage1.TabIndex = 11;
             // 
             // signInPage1
             // 
             this.signInPage1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.signInPage1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signInPage1.Location = new System.Drawing.Point(0, 0);
             this.signInPage1.Name = "signInPage1";
             this.signInPage1.Size = new System.Drawing.Size(1424, 985);
             this.signInPage1.TabIndex = 10;
             // 
-            // userControl41
-            // 
-            this.userControl41.Location = new System.Drawing.Point(0, 0);
-            this.userControl41.Margin = new System.Windows.Forms.Padding(0);
-            this.userControl41.Name = "userControl41";
-            this.userControl41.Size = new System.Drawing.Size(1024, 900);
-            this.userControl41.TabIndex = 3;
-            // 
-            // userControl31
-            // 
-            this.userControl31.Location = new System.Drawing.Point(0, 900);
-            this.userControl31.Margin = new System.Windows.Forms.Padding(0);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(1024, 900);
-            this.userControl31.TabIndex = 2;
-            // 
-            // userControl21
-            // 
-            this.userControl21.Location = new System.Drawing.Point(0, 1800);
-            this.userControl21.Margin = new System.Windows.Forms.Padding(0);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(1024, 900);
-            this.userControl21.TabIndex = 1;
-            // 
-            // userControl11
-            // 
-            this.userControl11.Location = new System.Drawing.Point(0, 2700);
-            this.userControl11.Margin = new System.Windows.Forms.Padding(0);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(1024, 900);
-            this.userControl11.TabIndex = 0;
-            // 
             // signUpPage1
             // 
-            this.signUpPage1.Location = new System.Drawing.Point(0, 3600);
-            this.signUpPage1.Margin = new System.Windows.Forms.Padding(0);
+            this.signUpPage1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.signUpPage1.Location = new System.Drawing.Point(0, 0);
             this.signUpPage1.Name = "signUpPage1";
-            this.signUpPage1.Size = new System.Drawing.Size(1164, 567);
-            this.signUpPage1.TabIndex = 4;
+            this.signUpPage1.Size = new System.Drawing.Size(1424, 985);
+            this.signUpPage1.TabIndex = 12;
             // 
             // familyTree
             // 
@@ -364,7 +363,6 @@ namespace WinformFamilyTree
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -387,11 +385,10 @@ namespace WinformFamilyTree
         private UserControl2 userControl21;
         private UserControl1 userControl11;
         private TableLayoutPanel tableLayoutPanel2;
-        private LogInPage logInPageView;
-        private SignUpPage signUpPage1;
-        private SignUpPage signUpPage2;
         private SignInPage signInPage1;
         private Panel panel1;
+        private FirstPage firstPage1;
+        private SignUpPage signUpPage1;
     }
 }
 

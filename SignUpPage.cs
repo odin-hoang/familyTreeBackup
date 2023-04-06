@@ -12,6 +12,7 @@ namespace WinformFamilyTree
 {
     public partial class SignUpPage : UserControl
     {
+        public static SignUpPage instance;
         public SignUpPage()
         {
             InitializeComponent();
@@ -20,14 +21,6 @@ namespace WinformFamilyTree
 
         private void signUpButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void signInButton_Click(object sender, EventArgs e)
-        {
-            familyTree.instance.ucSignInPage.Show();
-            familyTree.instance.ucSignInPage.BringToFront();
-            familyTree.instance.ucSignUpPage.Hide();
 
         }
     }

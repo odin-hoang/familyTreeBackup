@@ -12,15 +12,18 @@ namespace WinformFamilyTree
 {
     public partial class familyTree : Form
     {
+        // These variable used to communicate together.
         public static familyTree instance;
-        public UserControl ucSignInPage;
+        public UserControl ucFirstPage;
         public UserControl ucSignUpPage;
+        public UserControl ucSignInPage;
 
         public familyTree()
         {
             InitializeComponent();
             ucSignInPage = signInPage1;
-            ucSignUpPage = signUpPage2;
+            ucFirstPage = firstPage1; 
+            ucSignUpPage = signUpPage1;
             instance = this;
         }
 
@@ -36,7 +39,10 @@ namespace WinformFamilyTree
             memberListButton.FlatAppearance.BorderSize = 0;
             shareButton.FlatStyle = FlatStyle.Flat;
             shareButton.FlatAppearance.BorderSize = 0;
-            userControl11.Show();
+            firstPage1.Show();
+            signUpPage1.Hide();
+            signInPage1.Hide();
+            userControl11.Hide();
             userControl21.Hide();
             userControl31.Hide();
             userControl41.Hide();

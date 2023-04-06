@@ -53,12 +53,6 @@
     <Compile Include="FamilyTree.Designer.cs">
       <DependentUpon>FamilyTree.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogInPage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LogInPage.Designer.cs">
-      <DependentUpon>LogInPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="memberDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -71,6 +65,12 @@
     </Compile>
     <Compile Include="SignInPage.Designer.cs">
       <DependentUpon>SignInPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstPage.Designer.cs">
+      <DependentUpon>FirstPage.cs</DependentUpon>
     </Compile>
     <Compile Include="SignUpPage.cs">
       <SubType>UserControl</SubType>
@@ -106,9 +106,6 @@
     <EmbeddedResource Include="FamilyTree.resx">
       <DependentUpon>FamilyTree.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogInPage.resx">
-      <DependentUpon>LogInPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -121,6 +118,9 @@
     </Compile>
     <EmbeddedResource Include="SignInPage.resx">
       <DependentUpon>SignInPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstPage.resx">
+      <DependentUpon>FirstPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpPage.resx">
       <DependentUpon>SignUpPage.cs</DependentUpon>
