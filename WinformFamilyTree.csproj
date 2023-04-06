@@ -53,6 +53,12 @@
     <Compile Include="FamilyTree.Designer.cs">
       <DependentUpon>FamilyTree.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogInPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogInPage.Designer.cs">
+      <DependentUpon>LogInPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="memberDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -60,6 +66,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignInPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SignInPage.Designer.cs">
+      <DependentUpon>SignInPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SignUpPage.Designer.cs">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="TreeClasses\MemberClass.cs" />
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
@@ -88,6 +106,9 @@
     <EmbeddedResource Include="FamilyTree.resx">
       <DependentUpon>FamilyTree.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LogInPage.resx">
+      <DependentUpon>LogInPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -98,6 +119,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SignInPage.resx">
+      <DependentUpon>SignInPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpPage.resx">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>

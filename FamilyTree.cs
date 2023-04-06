@@ -12,9 +12,16 @@ namespace WinformFamilyTree
 {
     public partial class familyTree : Form
     {
+        public static familyTree instance;
+        public UserControl ucSignInPage;
+        public UserControl ucSignUpPage;
+
         public familyTree()
         {
             InitializeComponent();
+            ucSignInPage = signInPage1;
+            ucSignUpPage = signUpPage2;
+            instance = this;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -123,6 +130,27 @@ namespace WinformFamilyTree
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void homeScreenButton_TabStopChanged(object sender, EventArgs e)
+        {
+
+        }
+        Color mainColor = Color.FromArgb(137, 170, 255);
+
+
+        private void homeScreenButton_onClick(object sender, EventArgs e)
+        {
+
+            homeScreenButton.BackColor = Color.White;
+            homeScreenButton.ForeColor = mainColor;
+            homeScreenButton.Font = new Font(homeScreenButton.Font, FontStyle.Bold);
+
+        }
+
+        private void signUpPage2_Load(object sender, EventArgs e)
+        {
+       
         }
     }
 }
