@@ -14,9 +14,11 @@ namespace WinformFamilyTree
     public partial class SignInPage : UserControl
     {
         public static SignInPage instance;
+
         public SignInPage()
         {
             InitializeComponent();
+
             instance = this;
         }
 
