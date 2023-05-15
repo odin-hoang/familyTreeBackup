@@ -12,15 +12,37 @@ namespace WinformFamilyTree
 {
     public partial class familyTree : Form
     {
+        // These variable used to communicate together.
+        public static familyTree instance;
+        public UserControl ucFirstPage;
+        public UserControl ucSignUpPage;
+        public UserControl ucSignInPage;
+
         public familyTree()
         {
             InitializeComponent();
+            ucSignInPage = signInPage1;
+            ucFirstPage = firstPage1; 
+            ucSignUpPage = signUpPage1;
+            instance = this;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             // Inital View is Home Screen 
-            userControl11.Show();
+            tableLayoutPanel1.BackColor = Color.FromArgb(0, 0, 0, 0);
+            viewBiographyButton.FlatStyle = FlatStyle.Flat; 
+            viewBiographyButton.FlatAppearance.BorderSize = 0;
+            homeScreenButton.FlatStyle = FlatStyle.Flat;
+            homeScreenButton.FlatAppearance.BorderSize= 0;
+            memberListButton.FlatStyle = FlatStyle.Flat;
+            memberListButton.FlatAppearance.BorderSize = 0;
+            shareButton.FlatStyle = FlatStyle.Flat;
+            shareButton.FlatAppearance.BorderSize = 0;
+            firstPage1.Show();
+            signUpPage1.Hide();
+            signInPage1.Hide();
+            userControl11.Hide();
             userControl21.Hide();
             userControl31.Hide();
             userControl41.Hide();
@@ -29,10 +51,6 @@ namespace WinformFamilyTree
         }
 
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void searchBox_TextChanged(object sender, EventArgs e)
         {
@@ -113,6 +131,32 @@ namespace WinformFamilyTree
                 searchBox.Text = placeHolder;
                 searchBox.ForeColor = Color.Silver;
             }
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void homeScreenButton_TabStopChanged(object sender, EventArgs e)
+        {
+
+        }
+        Color mainColor = Color.FromArgb(137, 170, 255);
+
+
+        private void homeScreenButton_onClick(object sender, EventArgs e)
+        {
+
+            homeScreenButton.BackColor = Color.White;
+            homeScreenButton.ForeColor = mainColor;
+            homeScreenButton.Font = new Font(homeScreenButton.Font, FontStyle.Bold);
+
+        }
+
+        private void signUpPage2_Load(object sender, EventArgs e)
+        {
+       
         }
     }
 }
