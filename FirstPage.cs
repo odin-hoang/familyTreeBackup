@@ -33,5 +33,10 @@ namespace WinformFamilyTree
             familyTree.instance.ucFirstPage.Hide();
 
         }
+
+        private void productNameLabel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
