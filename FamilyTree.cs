@@ -7,9 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinformFamilyTree.TreeClasses;
 
 namespace WinformFamilyTree
 {
+    
     public partial class familyTree : Form
     {
         // These variable used to communicate together.
@@ -18,6 +20,26 @@ namespace WinformFamilyTree
         public UserControl ucSignUpPage;
         public UserControl ucSignInPage;
 
+        // Declaring a variable to submit a sign up form to database
+        public void formSubmit_SignUp(object sender, EventArgs e)
+        {
+            AccountClass c = new AccountClass();
+            c.FirstName = SignUpPage.instance.firstNameTextBox.Text;
+            c.LastName = SignUpPage.instance.lastNameTextBox.Text;
+            c.Email = SignUpPage.instance.emailTextBox.Text;
+            c.Password = SignUpPage.instance.passwordTextBox.Text;
+            bool success = c.Insert(c);
+            if (success)
+            {
+                MessageBox.Show("Đăng ký tài khoản thành công!");
+            } else
+            {
+                MessageBox.Show("Vui lòng thử lại!");
+            }
+            DataTable dt = c.Select();
+            UserControl3.instance.dtg.DataSource = dt;
+
+        }
         public familyTree()
         {
             InitializeComponent();
