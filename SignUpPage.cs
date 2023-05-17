@@ -22,6 +22,10 @@ namespace WinformFamilyTree
         {
             InitializeComponent();
             instance = this;
+            kryptonTextBox1.Text = "Vd: Nguyễn Văn";
+            kryptonTextBox1.StateCommon.Content.Color1 = Color.Gray;
+            kryptonTextBox2.Text = "Vd: An";
+            kryptonTextBox2.StateCommon.Content.Color1 = Color.Gray;
         }
    
         private void signUpButton_Click(object sender, EventArgs e)
@@ -47,6 +51,43 @@ namespace WinformFamilyTree
         private void kryptonContextMenu1_Opening(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void kryptonTextBox1_Enter(object sender, EventArgs e)
+        {
+            if (kryptonTextBox1.Text == "Vd: Nguyễn Văn")
+            {
+                kryptonTextBox1.Text = "";
+                kryptonTextBox1.StateCommon.Content.Color1 = Color.Black;
+            }
+        }
+
+        private void kryptonTextBox1_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(kryptonTextBox1.Text))
+            {
+                kryptonTextBox1.Text = "Vd: Nguyễn Văn";
+                kryptonTextBox1.StateCommon.Content.Color1 = Color.Gray;
+            }
+        }
+
+
+        private void kryptonTextBox2_Enter(object sender, EventArgs e)
+        {
+            if (kryptonTextBox2.Text == "Vd: An")
+            {
+                kryptonTextBox2.Text = "";
+                kryptonTextBox2.StateCommon.Content.Color1 = Color.Black;
+            }
+        }
+
+        private void kryptonTextBox2_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(kryptonTextBox2.Text))
+            {
+                kryptonTextBox2.Text = "Vd: An";
+                kryptonTextBox2.StateCommon.Content.Color1 = Color.Gray;
+            }
         }
     }
 }

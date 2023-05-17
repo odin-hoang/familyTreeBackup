@@ -59,12 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddMember.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AddMember.Designer.cs">
-      <DependentUpon>AddMember.cs</DependentUpon>
-    </Compile>
     <Compile Include="FamilyTree.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,9 +116,6 @@
     <Compile Include="UserControl4.Designer.cs">
       <DependentUpon>UserControl4.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddMember.resx">
-      <DependentUpon>AddMember.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FamilyTree.resx">
       <DependentUpon>FamilyTree.cs</DependentUpon>
     </EmbeddedResource>

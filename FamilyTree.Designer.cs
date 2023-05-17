@@ -39,19 +39,19 @@ namespace WinformFamilyTree
             this.searchBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.userControl41 = new WinformFamilyTree.UserControl4();
-            this.userControl31 = new WinformFamilyTree.UserControl3();
-            this.userControl21 = new WinformFamilyTree.UserControl2();
-            this.userControl11 = new WinformFamilyTree.UserControl1();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.signUpPage1 = new WinformFamilyTree.SignUpPage();
             this.firstPage1 = new WinformFamilyTree.FirstPage();
             this.signInPage1 = new WinformFamilyTree.SignInPage();
-            this.signUpPage1 = new WinformFamilyTree.SignUpPage();
+            this.userControl41 = new WinformFamilyTree.UserControl4();
+            this.userControl31 = new WinformFamilyTree.UserControl3();
+            this.userControl21 = new WinformFamilyTree.UserControl2();
+            this.userControl11 = new WinformFamilyTree.UserControl1();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -122,10 +122,10 @@ namespace WinformFamilyTree
             // 
             this.searchBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBox.ForeColor = System.Drawing.Color.Silver;
-            this.searchBox.Location = new System.Drawing.Point(1148, 53);
+            this.searchBox.Location = new System.Drawing.Point(1028, 53);
             this.searchBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(250, 29);
+            this.searchBox.Size = new System.Drawing.Size(210, 29);
             this.searchBox.TabIndex = 4;
             this.searchBox.Text = "Nhập tên thành viên";
             this.searchBox.Click += new System.EventHandler(this.searchBox_Click);
@@ -170,7 +170,7 @@ namespace WinformFamilyTree
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1424, 985);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1264, 681);
             this.tableLayoutPanel1.TabIndex = 9;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -185,47 +185,15 @@ namespace WinformFamilyTree
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.tableLayoutPanel1.SetRowSpan(this.flowLayoutPanel2, 5);
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1026, 560);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(872, 550);
             this.flowLayoutPanel2.TabIndex = 3;
-            // 
-            // userControl41
-            // 
-            this.userControl41.Location = new System.Drawing.Point(0, 0);
-            this.userControl41.Margin = new System.Windows.Forms.Padding(0);
-            this.userControl41.Name = "userControl41";
-            this.userControl41.Size = new System.Drawing.Size(1024, 900);
-            this.userControl41.TabIndex = 3;
-            // 
-            // userControl31
-            // 
-            this.userControl31.Location = new System.Drawing.Point(0, 900);
-            this.userControl31.Margin = new System.Windows.Forms.Padding(0);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(1024, 900);
-            this.userControl31.TabIndex = 2;
-            // 
-            // userControl21
-            // 
-            this.userControl21.Location = new System.Drawing.Point(0, 1800);
-            this.userControl21.Margin = new System.Windows.Forms.Padding(0);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(1024, 900);
-            this.userControl21.TabIndex = 1;
-            // 
-            // userControl11
-            // 
-            this.userControl11.Location = new System.Drawing.Point(0, 2700);
-            this.userControl11.Margin = new System.Windows.Forms.Padding(0);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(1024, 900);
-            this.userControl11.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.ErrorImage = global::WinformFamilyTree.Properties.Resources.search;
             this.pictureBox1.Image = global::WinformFamilyTree.Properties.Resources.search;
-            this.pictureBox1.Location = new System.Drawing.Point(1114, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(994, 57);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 7, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(26, 26);
@@ -256,7 +224,7 @@ namespace WinformFamilyTree
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(340, 904);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(340, 600);
             this.tableLayoutPanel2.TabIndex = 9;
             // 
             // pictureBox2
@@ -295,10 +263,10 @@ namespace WinformFamilyTree
             this.flowLayoutPanel1.Controls.Add(this.memberListButton);
             this.flowLayoutPanel1.Controls.Add(this.shareButton);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(17, 357);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(17, 327);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(300, 547);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(300, 273);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // panel1
@@ -310,8 +278,16 @@ namespace WinformFamilyTree
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1424, 985);
+            this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 10;
+            // 
+            // signUpPage1
+            // 
+            this.signUpPage1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.signUpPage1.Location = new System.Drawing.Point(0, 0);
+            this.signUpPage1.Name = "signUpPage1";
+            this.signUpPage1.Size = new System.Drawing.Size(1264, 681);
+            this.signUpPage1.TabIndex = 12;
             // 
             // firstPage1
             // 
@@ -319,7 +295,7 @@ namespace WinformFamilyTree
             this.firstPage1.Location = new System.Drawing.Point(0, 0);
             this.firstPage1.Margin = new System.Windows.Forms.Padding(2);
             this.firstPage1.Name = "firstPage1";
-            this.firstPage1.Size = new System.Drawing.Size(1424, 985);
+            this.firstPage1.Size = new System.Drawing.Size(1264, 681);
             this.firstPage1.TabIndex = 11;
             // 
             // signInPage1
@@ -328,23 +304,47 @@ namespace WinformFamilyTree
             this.signInPage1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signInPage1.Location = new System.Drawing.Point(0, 0);
             this.signInPage1.Name = "signInPage1";
-            this.signInPage1.Size = new System.Drawing.Size(1424, 985);
+            this.signInPage1.Size = new System.Drawing.Size(1264, 681);
             this.signInPage1.TabIndex = 10;
             // 
-            // signUpPage1
+            // userControl41
             // 
-            this.signUpPage1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.signUpPage1.Location = new System.Drawing.Point(0, 0);
-            this.signUpPage1.Name = "signUpPage1";
-            this.signUpPage1.Size = new System.Drawing.Size(1424, 985);
-            this.signUpPage1.TabIndex = 12;
+            this.userControl41.Location = new System.Drawing.Point(0, 0);
+            this.userControl41.Margin = new System.Windows.Forms.Padding(0);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(1024, 900);
+            this.userControl41.TabIndex = 3;
+            // 
+            // userControl31
+            // 
+            this.userControl31.Location = new System.Drawing.Point(0, 900);
+            this.userControl31.Margin = new System.Windows.Forms.Padding(0);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(1024, 900);
+            this.userControl31.TabIndex = 2;
+            // 
+            // userControl21
+            // 
+            this.userControl21.Location = new System.Drawing.Point(0, 1800);
+            this.userControl21.Margin = new System.Windows.Forms.Padding(0);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(1024, 900);
+            this.userControl21.TabIndex = 1;
+            // 
+            // userControl11
+            // 
+            this.userControl11.Location = new System.Drawing.Point(0, 2700);
+            this.userControl11.Margin = new System.Windows.Forms.Padding(0);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(1024, 900);
+            this.userControl11.TabIndex = 0;
             // 
             // familyTree
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1424, 985);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

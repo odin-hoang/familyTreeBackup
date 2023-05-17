@@ -190,7 +190,7 @@
             this.kryptonTextBox2.Margin = new System.Windows.Forms.Padding(0);
             this.kryptonTextBox2.Name = "kryptonTextBox2";
             this.kryptonTextBox2.PasswordChar = '●';
-            this.kryptonTextBox2.Size = new System.Drawing.Size(434, 50);
+            this.kryptonTextBox2.Size = new System.Drawing.Size(434, 48);
             this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -200,7 +200,6 @@
             this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.kryptonTextBox2.TabIndex = 8;
-            this.kryptonTextBox2.Text = "ok";
             this.kryptonTextBox2.UseSystemPasswordChar = true;
             this.kryptonTextBox2.WordWrap = false;
             // 
