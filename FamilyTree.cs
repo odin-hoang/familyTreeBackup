@@ -37,15 +37,15 @@ namespace WinformFamilyTree
                 MessageBox.Show("Vui lòng thử lại!");
             }
             DataTable dt = c.Select();
-            UserControl3.instance.dtg.DataSource = dt;
+            MemberListScreen.instance.dtg.DataSource = dt;
 
         }
         public familyTree()
         {
             InitializeComponent();
-            ucSignInPage = signInPage1;
-            ucFirstPage = firstPage1; 
-            ucSignUpPage = signUpPage1;
+            ucSignInPage = signInPage;
+            ucFirstPage = firstPage; 
+            ucSignUpPage = signUpPage;
             instance = this;
         }
 
@@ -59,16 +59,16 @@ namespace WinformFamilyTree
             homeScreenButton.FlatAppearance.BorderSize= 0;
             memberListButton.FlatStyle = FlatStyle.Flat;
             memberListButton.FlatAppearance.BorderSize = 0;
-            shareButton.FlatStyle = FlatStyle.Flat;
-            shareButton.FlatAppearance.BorderSize = 0;
-            firstPage1.Show();
-            signUpPage1.Hide();
-            signInPage1.Hide();
-            userControl11.Hide();
-            userControl21.Hide();
-            userControl31.Hide();
-            userControl41.Hide();
-            userControl11.BringToFront();
+            sharedButton.FlatStyle = FlatStyle.Flat;
+            sharedButton.FlatAppearance.BorderSize = 0;
+            firstPage.Show();
+            signUpPage.Hide();
+            signInPage.Hide();
+            homeScreen.Hide();
+            biographyScreen.Hide();
+            memberListScreen.Hide();
+            sharedScreen.Hide();
+            homeScreen.BringToFront();
             
         }
 
@@ -81,43 +81,43 @@ namespace WinformFamilyTree
 
         private void homeScreenButton_Click(object sender, EventArgs e)
         {
-            userControl11.Show();
-            userControl21.Hide();
-            userControl31.Hide();
-            userControl41.Hide();
-            userControl11.BringToFront();
+            homeScreen.Show();
+            biographyScreen.Hide();
+            memberListScreen.Hide();
+            sharedScreen.Hide();
+            homeScreen.BringToFront();
 
         }
 
         private void viewBiographyButton_Click(object sender, EventArgs e)
         {
-            userControl11.Hide();
-            userControl21.Show();
-            userControl31.Hide();
-            userControl41.Hide();
-            userControl21.BringToFront();
+            homeScreen.Hide();
+            biographyScreen.Show();
+            memberListScreen.Hide();
+            sharedScreen.Hide();
+            biographyScreen.BringToFront();
 
         }
 
         private void memberListButton_Click(object sender, EventArgs e)
         {
             // Only show screen of member list and hide other screen
-            userControl11.Hide();
-            userControl21.Hide();
-            userControl31.Show();
-            userControl41.Hide();
-            userControl31.BringToFront();
+            homeScreen.Hide();
+            biographyScreen.Hide();
+            memberListScreen.Show();
+            sharedScreen.Hide();
+            memberListScreen.BringToFront();
             // Hide search box
 
         }
 
         private void shareButton_Click(object sender, EventArgs e)
         {
-            userControl11.Hide();
-            userControl21.Hide();
-            userControl31.Hide();
-            userControl41.Show();
-            userControl41.BringToFront();
+            homeScreen.Hide();
+            biographyScreen.Hide();
+            memberListScreen.Hide();
+            sharedScreen.Show();
+            sharedScreen.BringToFront();
 
         }
 

@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace WinformFamilyTree
 {
-    public partial class UserControl3 : UserControl
+    public partial class MemberListScreen : UserControl
     {
-        public static UserControl3 instance;
+        public static MemberListScreen instance;
         public DataGridView dtg;
-        public UserControl3()
+        public MemberListScreen()
         {
             InitializeComponent();
             instance = this;

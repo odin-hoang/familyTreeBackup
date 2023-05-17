@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinformFamilyTree
 {
-    public partial class UserControl4 : UserControl
+    public partial class SharedScreen : UserControl
     {
-        public UserControl4()
+        public SharedScreen()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace WinformFamilyTree
 {
-    partial class UserControl3
+    partial class MemberListScreen
     {
         /// <summary> 
         /// Required designer variable.
