@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.signUpButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.productNameLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -38,6 +37,7 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.signUpButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -76,76 +76,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(900, 640);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // signUpButton
-            // 
-            this.signUpButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.signUpButton.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom2;
-            this.tableLayoutPanel2.SetColumnSpan(this.signUpButton, 2);
-            this.signUpButton.Location = new System.Drawing.Point(120, 308);
-            this.signUpButton.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.signUpButton.Name = "signUpButton";
-            this.signUpButton.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
-            this.signUpButton.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
-            this.signUpButton.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.signUpButton.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.signUpButton.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.signUpButton.OverrideDefault.Content.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.signUpButton.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.signUpButton.Size = new System.Drawing.Size(200, 65);
-            this.signUpButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
-            this.signUpButton.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
-            this.signUpButton.StateCommon.Back.ColorAngle = 180F;
-            this.signUpButton.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.signUpButton.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.signUpButton.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.signUpButton.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.signUpButton.StateCommon.Border.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.signUpButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.signUpButton.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.signUpButton.StateCommon.Border.Rounding = 20;
-            this.signUpButton.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Inter SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signUpButton.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.signUpButton.StateCommon.Content.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.signUpButton.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
-            this.signUpButton.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
-            this.signUpButton.StateNormal.Back.ColorAngle = 180F;
-            this.signUpButton.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.signUpButton.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.signUpButton.StateNormal.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.signUpButton.StateNormal.Border.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.signUpButton.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.signUpButton.StateNormal.Border.Rounding = 20;
-            this.signUpButton.StateNormal.Content.LongText.Color1 = System.Drawing.Color.White;
-            this.signUpButton.StateNormal.Content.LongText.Color2 = System.Drawing.Color.White;
-            this.signUpButton.StateNormal.Content.ShortText.Color1 = System.Drawing.SystemColors.Control;
-            this.signUpButton.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.signUpButton.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.signUpButton.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
-            this.signUpButton.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(110)))), ((int)(((byte)(254)))));
-            this.signUpButton.StateTracking.Back.ColorAngle = 180F;
-            this.signUpButton.StateTracking.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.signUpButton.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.signUpButton.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.signUpButton.StateTracking.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
-            this.signUpButton.StateTracking.Border.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.signUpButton.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.signUpButton.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.signUpButton.StateTracking.Border.Rounding = 20;
-            this.signUpButton.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.signUpButton.TabIndex = 5;
-            this.signUpButton.Values.Text = "Đăng ký";
-            this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
             // 
             // productNameLabel
             // 
@@ -233,7 +163,8 @@
             this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.kryptonTextBox1.TabIndex = 8;
             this.kryptonTextBox1.WordWrap = false;
-            this.kryptonTextBox1.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
+            this.kryptonTextBox1.Enter += new System.EventHandler(this.kryptonTextBox1_Enter);
+            this.kryptonTextBox1.Leave += new System.EventHandler(this.kryptonTextBox1_Leave);
             // 
             // flowLayoutPanel2
             // 
@@ -280,7 +211,78 @@
             this.kryptonTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.kryptonTextBox2.TabIndex = 8;
             this.kryptonTextBox2.WordWrap = false;
-            this.kryptonTextBox2.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
+            this.kryptonTextBox2.Enter += new System.EventHandler(this.kryptonTextBox2_Enter);
+            this.kryptonTextBox2.Leave += new System.EventHandler(this.kryptonTextBox2_Leave);
+            // 
+            // signUpButton
+            // 
+            this.signUpButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.signUpButton.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom2;
+            this.tableLayoutPanel2.SetColumnSpan(this.signUpButton, 2);
+            this.signUpButton.Location = new System.Drawing.Point(120, 308);
+            this.signUpButton.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.signUpButton.Name = "signUpButton";
+            this.signUpButton.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
+            this.signUpButton.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
+            this.signUpButton.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.signUpButton.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.signUpButton.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.signUpButton.OverrideDefault.Content.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.signUpButton.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.signUpButton.Size = new System.Drawing.Size(200, 65);
+            this.signUpButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
+            this.signUpButton.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
+            this.signUpButton.StateCommon.Back.ColorAngle = 180F;
+            this.signUpButton.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.signUpButton.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.signUpButton.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.signUpButton.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.signUpButton.StateCommon.Border.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.True;
+            this.signUpButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.signUpButton.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.signUpButton.StateCommon.Border.Rounding = 20;
+            this.signUpButton.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Inter SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpButton.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.signUpButton.StateCommon.Content.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.signUpButton.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
+            this.signUpButton.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
+            this.signUpButton.StateNormal.Back.ColorAngle = 180F;
+            this.signUpButton.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.signUpButton.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.signUpButton.StateNormal.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.signUpButton.StateNormal.Border.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.True;
+            this.signUpButton.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.signUpButton.StateNormal.Border.Rounding = 20;
+            this.signUpButton.StateNormal.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.signUpButton.StateNormal.Content.LongText.Color2 = System.Drawing.Color.White;
+            this.signUpButton.StateNormal.Content.ShortText.Color1 = System.Drawing.SystemColors.Control;
+            this.signUpButton.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.signUpButton.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.signUpButton.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
+            this.signUpButton.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(110)))), ((int)(((byte)(254)))));
+            this.signUpButton.StateTracking.Back.ColorAngle = 180F;
+            this.signUpButton.StateTracking.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
+            this.signUpButton.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.signUpButton.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.signUpButton.StateTracking.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.signUpButton.StateTracking.Border.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.True;
+            this.signUpButton.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.signUpButton.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.signUpButton.StateTracking.Border.Rounding = 20;
+            this.signUpButton.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.signUpButton.TabIndex = 5;
+            this.signUpButton.Values.Text = "Đăng ký";
+            this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
             // 
             // flowLayoutPanel3
             // 
@@ -328,7 +330,6 @@
             this.kryptonTextBox3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.kryptonTextBox3.TabIndex = 8;
             this.kryptonTextBox3.WordWrap = false;
-            this.kryptonTextBox3.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
             // 
             // flowLayoutPanel4
             // 
@@ -366,7 +367,7 @@
             this.kryptonTextBox4.Margin = new System.Windows.Forms.Padding(0);
             this.kryptonTextBox4.Name = "kryptonTextBox4";
             this.kryptonTextBox4.PasswordChar = '●';
-            this.kryptonTextBox4.Size = new System.Drawing.Size(434, 50);
+            this.kryptonTextBox4.Size = new System.Drawing.Size(434, 48);
             this.kryptonTextBox4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.kryptonTextBox4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -376,10 +377,8 @@
             this.kryptonTextBox4.StateCommon.Content.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox4.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.kryptonTextBox4.TabIndex = 8;
-            this.kryptonTextBox4.Text = "ok";
             this.kryptonTextBox4.UseSystemPasswordChar = true;
             this.kryptonTextBox4.WordWrap = false;
-            this.kryptonTextBox4.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
             // 
             // textBox1
             // 
@@ -387,7 +386,7 @@
             this.textBox1.Location = new System.Drawing.Point(0, 30);
             this.textBox1.Margin = new System.Windows.Forms.Padding(0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 37);
+            this.textBox1.Size = new System.Drawing.Size(208, 35);
             this.textBox1.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
             this.textBox1.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
             this.textBox1.StateActive.Border.ColorAngle = 180F;
