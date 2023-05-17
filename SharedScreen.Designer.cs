@@ -1,6 +1,6 @@
 ﻿namespace WinformFamilyTree
 {
-    partial class UserControl1
+    partial class SharedScreen
     {
         /// <summary> 
         /// Required designer variable.
@@ -35,19 +35,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(302, 149);
+            this.label1.Location = new System.Drawing.Point(461, 263);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Home Screen";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Size = new System.Drawing.Size(124, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Shared View";
             // 
-            // UserControl1
+            // UserControl4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Name = "UserControl1";
+            this.Name = "UserControl4";
             this.Size = new System.Drawing.Size(1024, 900);
             this.ResumeLayout(false);
             this.PerformLayout();

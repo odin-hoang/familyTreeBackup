@@ -92,29 +92,29 @@
     </Compile>
     <Compile Include="TreeClasses\AccountClass.cs" />
     <Compile Include="TreeClasses\MemberClass.cs" />
-    <Compile Include="UserControl1.cs">
+    <Compile Include="HomeScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="HomeScreen.Designer.cs">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl2.cs">
+    <Compile Include="BiographyScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl2.Designer.cs">
-      <DependentUpon>UserControl2.cs</DependentUpon>
+    <Compile Include="BiographyScreen.Designer.cs">
+      <DependentUpon>BiographyScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl3.cs">
+    <Compile Include="MemberListScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl3.Designer.cs">
-      <DependentUpon>UserControl3.cs</DependentUpon>
+    <Compile Include="MemberListScreen.Designer.cs">
+      <DependentUpon>MemberListScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl4.cs">
+    <Compile Include="SharedScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl4.Designer.cs">
-      <DependentUpon>UserControl4.cs</DependentUpon>
+    <Compile Include="SharedScreen.Designer.cs">
+      <DependentUpon>SharedScreen.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FamilyTree.resx">
       <DependentUpon>FamilyTree.cs</DependentUpon>
@@ -138,17 +138,17 @@
     <EmbeddedResource Include="SignUpPage.resx">
       <DependentUpon>SignUpPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="HomeScreen.resx">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl2.resx">
-      <DependentUpon>UserControl2.cs</DependentUpon>
+    <EmbeddedResource Include="BiographyScreen.resx">
+      <DependentUpon>BiographyScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl3.resx">
-      <DependentUpon>UserControl3.cs</DependentUpon>
+    <EmbeddedResource Include="MemberListScreen.resx">
+      <DependentUpon>MemberListScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl4.resx">
-      <DependentUpon>UserControl4.cs</DependentUpon>
+    <EmbeddedResource Include="SharedScreen.resx">
+      <DependentUpon>SharedScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="memberDataSet.xsc">
       <DependentUpon>memberDataSet.xsd</DependentUpon>
