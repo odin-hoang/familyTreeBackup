@@ -39,24 +39,24 @@ namespace WinformFamilyTree
             this.searchBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.sharedScreen = new WinformFamilyTree.SharedScreen();
+            this.memberListScreen = new WinformFamilyTree.MemberListScreen();
+            this.biographyScreen = new WinformFamilyTree.BiographyViewScreen();
+            this.homeScreen = new WinformFamilyTree.HomeScreen();
+            this.SearchIconPictureBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.AvatarPictureBox = new System.Windows.Forms.PictureBox();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.signUpPage = new WinformFamilyTree.SignUpPage();
             this.firstPage = new WinformFamilyTree.FirstPage();
             this.signInPage = new WinformFamilyTree.SignInPage();
-            this.sharedScreen = new WinformFamilyTree.SharedScreen();
-            this.memberListScreen = new WinformFamilyTree.MemberListScreen();
-            this.biographyScreen = new WinformFamilyTree.BiographyViewScreen();
-            this.homeScreen = new WinformFamilyTree.HomeScreen();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchIconPictureBox)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarPictureBox)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -148,7 +148,7 @@ namespace WinformFamilyTree
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 6, 3);
             this.tableLayoutPanel1.Controls.Add(this.searchBox, 7, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 6, 2);
+            this.tableLayoutPanel1.Controls.Add(this.SearchIconPictureBox, 6, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -188,18 +188,50 @@ namespace WinformFamilyTree
             this.flowLayoutPanel2.Size = new System.Drawing.Size(872, 550);
             this.flowLayoutPanel2.TabIndex = 3;
             // 
-            // pictureBox1
+            // sharedScreen
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.ErrorImage = global::WinformFamilyTree.Properties.Resources.search;
-            this.pictureBox1.Image = global::WinformFamilyTree.Properties.Resources.search;
-            this.pictureBox1.Location = new System.Drawing.Point(994, 57);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 7, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.sharedScreen.Location = new System.Drawing.Point(0, 0);
+            this.sharedScreen.Margin = new System.Windows.Forms.Padding(0);
+            this.sharedScreen.Name = "sharedScreen";
+            this.sharedScreen.Size = new System.Drawing.Size(1024, 900);
+            this.sharedScreen.TabIndex = 3;
+            // 
+            // memberListScreen
+            // 
+            this.memberListScreen.Location = new System.Drawing.Point(0, 900);
+            this.memberListScreen.Margin = new System.Windows.Forms.Padding(0);
+            this.memberListScreen.Name = "memberListScreen";
+            this.memberListScreen.Size = new System.Drawing.Size(1024, 900);
+            this.memberListScreen.TabIndex = 2;
+            // 
+            // biographyScreen
+            // 
+            this.biographyScreen.Location = new System.Drawing.Point(0, 1800);
+            this.biographyScreen.Margin = new System.Windows.Forms.Padding(0);
+            this.biographyScreen.Name = "biographyScreen";
+            this.biographyScreen.Size = new System.Drawing.Size(1024, 900);
+            this.biographyScreen.TabIndex = 1;
+            // 
+            // homeScreen
+            // 
+            this.homeScreen.Location = new System.Drawing.Point(0, 2700);
+            this.homeScreen.Margin = new System.Windows.Forms.Padding(0);
+            this.homeScreen.Name = "homeScreen";
+            this.homeScreen.Size = new System.Drawing.Size(1024, 900);
+            this.homeScreen.TabIndex = 0;
+            // 
+            // SearchIconPictureBox
+            // 
+            this.SearchIconPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SearchIconPictureBox.ErrorImage = global::WinformFamilyTree.Properties.Resources.search;
+            this.SearchIconPictureBox.Image = global::WinformFamilyTree.Properties.Resources.search;
+            this.SearchIconPictureBox.Location = new System.Drawing.Point(994, 57);
+            this.SearchIconPictureBox.Margin = new System.Windows.Forms.Padding(4, 7, 4, 3);
+            this.SearchIconPictureBox.Name = "SearchIconPictureBox";
+            this.SearchIconPictureBox.Size = new System.Drawing.Size(26, 26);
+            this.SearchIconPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SearchIconPictureBox.TabIndex = 8;
+            this.SearchIconPictureBox.TabStop = false;
             // 
             // tableLayoutPanel2
             // 
@@ -211,7 +243,7 @@ namespace WinformFamilyTree
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.AvatarPictureBox, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.userNameLabel, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 1, 4);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(30, 50);
@@ -227,17 +259,17 @@ namespace WinformFamilyTree
             this.tableLayoutPanel2.Size = new System.Drawing.Size(340, 600);
             this.tableLayoutPanel2.TabIndex = 9;
             // 
-            // pictureBox2
+            // AvatarPictureBox
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::WinformFamilyTree.Properties.Resources.chu_chim_canh_cut_con_nhin_cute_de_thuong_113124382;
-            this.pictureBox2.Location = new System.Drawing.Point(67, 47);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.AvatarPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AvatarPictureBox.Image = global::WinformFamilyTree.Properties.Resources.chu_chim_canh_cut_con_nhin_cute_de_thuong_113124382;
+            this.AvatarPictureBox.Location = new System.Drawing.Point(67, 47);
+            this.AvatarPictureBox.Margin = new System.Windows.Forms.Padding(0);
+            this.AvatarPictureBox.Name = "AvatarPictureBox";
+            this.AvatarPictureBox.Size = new System.Drawing.Size(200, 200);
+            this.AvatarPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AvatarPictureBox.TabIndex = 0;
+            this.AvatarPictureBox.TabStop = false;
             // 
             // userNameLabel
             // 
@@ -307,38 +339,6 @@ namespace WinformFamilyTree
             this.signInPage.Size = new System.Drawing.Size(1264, 681);
             this.signInPage.TabIndex = 10;
             // 
-            // sharedScreen
-            // 
-            this.sharedScreen.Location = new System.Drawing.Point(0, 0);
-            this.sharedScreen.Margin = new System.Windows.Forms.Padding(0);
-            this.sharedScreen.Name = "sharedScreen";
-            this.sharedScreen.Size = new System.Drawing.Size(1024, 900);
-            this.sharedScreen.TabIndex = 3;
-            // 
-            // memberListScreen
-            // 
-            this.memberListScreen.Location = new System.Drawing.Point(0, 900);
-            this.memberListScreen.Margin = new System.Windows.Forms.Padding(0);
-            this.memberListScreen.Name = "memberListScreen";
-            this.memberListScreen.Size = new System.Drawing.Size(1024, 900);
-            this.memberListScreen.TabIndex = 2;
-            // 
-            // biographyScreen
-            // 
-            this.biographyScreen.Location = new System.Drawing.Point(0, 1800);
-            this.biographyScreen.Margin = new System.Windows.Forms.Padding(0);
-            this.biographyScreen.Name = "biographyScreen";
-            this.biographyScreen.Size = new System.Drawing.Size(1024, 900);
-            this.biographyScreen.TabIndex = 1;
-            // 
-            // homeScreen
-            // 
-            this.homeScreen.Location = new System.Drawing.Point(0, 2700);
-            this.homeScreen.Margin = new System.Windows.Forms.Padding(0);
-            this.homeScreen.Name = "homeScreen";
-            this.homeScreen.Size = new System.Drawing.Size(1024, 900);
-            this.homeScreen.TabIndex = 0;
-            // 
             // familyTree
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -357,10 +357,10 @@ namespace WinformFamilyTree
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchIconPictureBox)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarPictureBox)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -374,9 +374,9 @@ namespace WinformFamilyTree
         private Button memberListButton;
         private Button sharedButton;
         private TextBox searchBox;
-        private PictureBox pictureBox1;
+        private PictureBox SearchIconPictureBox;
         private TableLayoutPanel tableLayoutPanel1;
-        private PictureBox pictureBox2;
+        private PictureBox AvatarPictureBox;
         private Label userNameLabel;
         private FlowLayoutPanel flowLayoutPanel1;
         private FlowLayoutPanel flowLayoutPanel2;

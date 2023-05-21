@@ -32,7 +32,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.signUpButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.signInButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.productNameLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.FirstPageLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +44,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.productNameLabel, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.FirstPageLabel, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
@@ -104,7 +104,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.signUpButton.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.signUpButton.StateCommon.Border.Rounding = 20;
-            this.signUpButton.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Inter SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpButton.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpButton.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.signUpButton.StateCommon.Content.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.signUpButton.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
@@ -174,7 +174,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.signInButton.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.signInButton.StateCommon.Border.Rounding = 20;
-            this.signInButton.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Inter SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signInButton.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signInButton.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.signInButton.StateCommon.Content.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.signInButton.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
@@ -213,24 +213,24 @@
             this.signInButton.Values.Text = "Đăng nhập";
             this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
-            // productNameLabel
+            // FirstPageLabel
             // 
-            this.productNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.productNameLabel.Location = new System.Drawing.Point(216, 166);
-            this.productNameLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.productNameLabel.Name = "productNameLabel";
-            this.productNameLabel.Size = new System.Drawing.Size(648, 83);
-            this.productNameLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
-            this.productNameLabel.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
-            this.productNameLabel.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
-            this.productNameLabel.StateCommon.ShortText.ColorAngle = 0F;
-            this.productNameLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Montserrat", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productNameLabel.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.productNameLabel.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.productNameLabel.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.productNameLabel.TabIndex = 3;
-            this.productNameLabel.Values.Text = "Phần Mềm Quản Lý Cây Gia Phả";
-            this.productNameLabel.Paint += new System.Windows.Forms.PaintEventHandler(this.productNameLabel_Paint);
+            this.FirstPageLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.FirstPageLabel.Location = new System.Drawing.Point(241, 166);
+            this.FirstPageLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.FirstPageLabel.Name = "FirstPageLabel";
+            this.FirstPageLabel.Size = new System.Drawing.Size(598, 83);
+            this.FirstPageLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
+            this.FirstPageLabel.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
+            this.FirstPageLabel.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
+            this.FirstPageLabel.StateCommon.ShortText.ColorAngle = 0F;
+            this.FirstPageLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstPageLabel.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.FirstPageLabel.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
+            this.FirstPageLabel.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.FirstPageLabel.TabIndex = 3;
+            this.FirstPageLabel.Values.Text = "Phần Mềm Quản Lý Cây Gia Phả";
+            this.FirstPageLabel.Paint += new System.Windows.Forms.PaintEventHandler(this.productNameLabel_Paint);
             // 
             // FirstPage
             // 
@@ -253,6 +253,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton signUpButton;
         private ComponentFactory.Krypton.Toolkit.KryptonButton signInButton;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel productNameLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel FirstPageLabel;
     }
 }

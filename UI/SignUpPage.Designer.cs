@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.SignUpScreenLable = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.SignUpScreenLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.SignUpFirstNameLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.SignUpLastNameTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.SignUpLastNameLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.SignUpFirstNameTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.signUpButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.SignUpEmailLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.SignUpEmailTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.SignUpPasswordLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.SignUpPasswordTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.textBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonContextMenu1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenu();
             this.tableLayoutPanel1.SuspendLayout();
@@ -60,7 +60,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.SignUpScreenLable, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.SignUpScreenLabel, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,25 +77,23 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(900, 640);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // SignUpScreenLable
+            // SignUpScreenLabel
             // 
-            this.SignUpScreenLable.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.SignUpScreenLable.Location = new System.Drawing.Point(214, 113);
-            this.SignUpScreenLable.Margin = new System.Windows.Forms.Padding(0, 0, 0, 30);
-            this.SignUpScreenLable.Name = "SignUpScreenLable";
-            this.SignUpScreenLable.Size = new System.Drawing.Size(471, 49);
-            this.SignUpScreenLable.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
-            this.SignUpScreenLable.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
-            this.SignUpScreenLable.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
-            this.SignUpScreenLable.StateCommon.ShortText.ColorAngle = 0F;
-            this.SignUpScreenLable.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignUpScreenLable.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.SignUpScreenLable.StateCommon.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.SignUpScreenLable.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.SignUpScreenLable.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.SignUpScreenLable.StateCommon.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.SignUpScreenLable.TabIndex = 6;
-            this.SignUpScreenLable.Values.Text = "Đăng ký tài khoản quản lý";
+            this.SignUpScreenLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SignUpScreenLabel.Location = new System.Drawing.Point(214, 113);
+            this.SignUpScreenLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 30);
+            this.SignUpScreenLabel.Name = "SignUpScreenLabel";
+            this.SignUpScreenLabel.Size = new System.Drawing.Size(471, 49);
+            this.SignUpScreenLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
+            this.SignUpScreenLabel.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
+            this.SignUpScreenLabel.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
+            this.SignUpScreenLabel.StateCommon.ShortText.ColorAngle = 0F;
+            this.SignUpScreenLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpScreenLabel.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.SignUpScreenLabel.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
+            this.SignUpScreenLabel.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.SignUpScreenLabel.TabIndex = 6;
+            this.SignUpScreenLabel.Values.Text = "Đăng ký tài khoản quản lý";
             // 
             // tableLayoutPanel2
             // 
@@ -122,7 +120,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.kryptonLabel1);
+            this.flowLayoutPanel1.Controls.Add(this.SignUpFirstNameLabel);
             this.flowLayoutPanel1.Controls.Add(this.SignUpLastNameTextBox);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -131,24 +129,22 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(302, 90);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // kryptonLabel1
+            // SignUpFirstNameLabel
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(0);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(144, 30);
-            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
-            this.kryptonLabel1.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
-            this.kryptonLabel1.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
-            this.kryptonLabel1.StateCommon.ShortText.ColorAngle = 0F;
-            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel1.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel1.StateCommon.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel1.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.kryptonLabel1.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.kryptonLabel1.StateCommon.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kryptonLabel1.TabIndex = 7;
-            this.kryptonLabel1.Values.Text = "Họ và tên đệm";
+            this.SignUpFirstNameLabel.Location = new System.Drawing.Point(0, 0);
+            this.SignUpFirstNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.SignUpFirstNameLabel.Name = "SignUpFirstNameLabel";
+            this.SignUpFirstNameLabel.Size = new System.Drawing.Size(144, 30);
+            this.SignUpFirstNameLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
+            this.SignUpFirstNameLabel.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
+            this.SignUpFirstNameLabel.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
+            this.SignUpFirstNameLabel.StateCommon.ShortText.ColorAngle = 0F;
+            this.SignUpFirstNameLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpFirstNameLabel.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.SignUpFirstNameLabel.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
+            this.SignUpFirstNameLabel.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.SignUpFirstNameLabel.TabIndex = 7;
+            this.SignUpFirstNameLabel.Values.Text = "Họ và tên đệm";
             // 
             // SignUpLastNameTextBox
             // 
@@ -161,7 +157,6 @@
             this.SignUpLastNameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.SignUpLastNameTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.SignUpLastNameTextBox.StateCommon.Border.Rounding = 20;
             this.SignUpLastNameTextBox.StateCommon.Border.Width = 2;
             this.SignUpLastNameTextBox.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,7 +168,7 @@
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.kryptonLabel2);
+            this.flowLayoutPanel2.Controls.Add(this.SignUpLastNameLabel);
             this.flowLayoutPanel2.Controls.Add(this.SignUpFirstNameTextBox);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -182,24 +177,22 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(126, 90);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
-            // kryptonLabel2
+            // SignUpLastNameLabel
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(0, 0);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(0);
-            this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(45, 30);
-            this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
-            this.kryptonLabel2.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
-            this.kryptonLabel2.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
-            this.kryptonLabel2.StateCommon.ShortText.ColorAngle = 0F;
-            this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel2.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel2.StateCommon.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel2.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.kryptonLabel2.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.kryptonLabel2.StateCommon.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kryptonLabel2.TabIndex = 7;
-            this.kryptonLabel2.Values.Text = "Tên";
+            this.SignUpLastNameLabel.Location = new System.Drawing.Point(0, 0);
+            this.SignUpLastNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.SignUpLastNameLabel.Name = "SignUpLastNameLabel";
+            this.SignUpLastNameLabel.Size = new System.Drawing.Size(45, 30);
+            this.SignUpLastNameLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
+            this.SignUpLastNameLabel.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
+            this.SignUpLastNameLabel.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
+            this.SignUpLastNameLabel.StateCommon.ShortText.ColorAngle = 0F;
+            this.SignUpLastNameLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpLastNameLabel.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.SignUpLastNameLabel.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
+            this.SignUpLastNameLabel.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.SignUpLastNameLabel.TabIndex = 7;
+            this.SignUpLastNameLabel.Values.Text = "Tên";
             // 
             // SignUpFirstNameTextBox
             // 
@@ -212,7 +205,6 @@
             this.SignUpFirstNameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.SignUpFirstNameTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.SignUpFirstNameTextBox.StateCommon.Border.Rounding = 20;
             this.SignUpFirstNameTextBox.StateCommon.Border.Width = 2;
             this.SignUpFirstNameTextBox.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -232,26 +224,19 @@
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
             this.signUpButton.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
-            this.signUpButton.OverrideDefault.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.signUpButton.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.signUpButton.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.signUpButton.OverrideDefault.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.signUpButton.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.signUpButton.OverrideDefault.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.signUpButton.OverrideDefault.Content.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.signUpButton.OverrideDefault.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.signUpButton.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.signUpButton.OverrideFocus.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.signUpButton.OverrideFocus.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.signUpButton.Size = new System.Drawing.Size(200, 65);
             this.signUpButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
             this.signUpButton.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
             this.signUpButton.StateCommon.Back.ColorAngle = 180F;
             this.signUpButton.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
             this.signUpButton.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.signUpButton.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.signUpButton.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.signUpButton.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
             this.signUpButton.StateCommon.Border.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.True;
@@ -259,17 +244,13 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.signUpButton.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.signUpButton.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.signUpButton.StateCommon.Border.Rounding = 20;
             this.signUpButton.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpButton.StateCommon.Content.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.signUpButton.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.signUpButton.StateCommon.Content.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.signUpButton.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.signUpButton.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
             this.signUpButton.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
             this.signUpButton.StateNormal.Back.ColorAngle = 180F;
-            this.signUpButton.StateNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.signUpButton.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.signUpButton.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.signUpButton.StateNormal.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
@@ -277,25 +258,18 @@
             this.signUpButton.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.signUpButton.StateNormal.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.signUpButton.StateNormal.Border.Rounding = 20;
             this.signUpButton.StateNormal.Content.LongText.Color1 = System.Drawing.Color.White;
             this.signUpButton.StateNormal.Content.LongText.Color2 = System.Drawing.Color.White;
-            this.signUpButton.StateNormal.Content.LongText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.signUpButton.StateNormal.Content.LongText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.signUpButton.StateNormal.Content.ShortText.Color1 = System.Drawing.SystemColors.Control;
-            this.signUpButton.StateNormal.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.signUpButton.StateNormal.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.signUpButton.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.signUpButton.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.signUpButton.StatePressed.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.signUpButton.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
             this.signUpButton.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(110)))), ((int)(((byte)(254)))));
             this.signUpButton.StateTracking.Back.ColorAngle = 180F;
             this.signUpButton.StateTracking.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Linear;
-            this.signUpButton.StateTracking.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.signUpButton.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.signUpButton.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.signUpButton.StateTracking.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid;
@@ -304,11 +278,8 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.signUpButton.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.signUpButton.StateTracking.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.signUpButton.StateTracking.Border.Rounding = 20;
             this.signUpButton.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.signUpButton.StateTracking.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.signUpButton.StateTracking.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.signUpButton.TabIndex = 5;
             this.signUpButton.Values.Text = "Đăng ký";
             this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
@@ -316,7 +287,7 @@
             // flowLayoutPanel3
             // 
             this.tableLayoutPanel2.SetColumnSpan(this.flowLayoutPanel3, 2);
-            this.flowLayoutPanel3.Controls.Add(this.kryptonLabel3);
+            this.flowLayoutPanel3.Controls.Add(this.SignUpEmailLabel);
             this.flowLayoutPanel3.Controls.Add(this.SignUpEmailTextBox);
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -325,24 +296,22 @@
             this.flowLayoutPanel3.Size = new System.Drawing.Size(434, 90);
             this.flowLayoutPanel3.TabIndex = 2;
             // 
-            // kryptonLabel3
+            // SignUpEmailLabel
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(0, 0);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(0);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(61, 30);
-            this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
-            this.kryptonLabel3.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
-            this.kryptonLabel3.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
-            this.kryptonLabel3.StateCommon.ShortText.ColorAngle = 0F;
-            this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel3.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel3.StateCommon.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel3.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.kryptonLabel3.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.kryptonLabel3.StateCommon.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kryptonLabel3.TabIndex = 7;
-            this.kryptonLabel3.Values.Text = "Email";
+            this.SignUpEmailLabel.Location = new System.Drawing.Point(0, 0);
+            this.SignUpEmailLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.SignUpEmailLabel.Name = "SignUpEmailLabel";
+            this.SignUpEmailLabel.Size = new System.Drawing.Size(61, 30);
+            this.SignUpEmailLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
+            this.SignUpEmailLabel.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
+            this.SignUpEmailLabel.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
+            this.SignUpEmailLabel.StateCommon.ShortText.ColorAngle = 0F;
+            this.SignUpEmailLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpEmailLabel.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.SignUpEmailLabel.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
+            this.SignUpEmailLabel.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.SignUpEmailLabel.TabIndex = 7;
+            this.SignUpEmailLabel.Values.Text = "Email";
             // 
             // SignUpEmailTextBox
             // 
@@ -355,7 +324,6 @@
             this.SignUpEmailTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.SignUpEmailTextBox.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.SignUpEmailTextBox.StateCommon.Border.Rounding = 20;
             this.SignUpEmailTextBox.StateCommon.Border.Width = 2;
             this.SignUpEmailTextBox.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -366,8 +334,8 @@
             // flowLayoutPanel4
             // 
             this.tableLayoutPanel2.SetColumnSpan(this.flowLayoutPanel4, 2);
-            this.flowLayoutPanel4.Controls.Add(this.kryptonLabel4);
-            this.flowLayoutPanel4.Controls.Add(this.kryptonTextBox4);
+            this.flowLayoutPanel4.Controls.Add(this.SignUpPasswordLabel);
+            this.flowLayoutPanel4.Controls.Add(this.SignUpPasswordTextBox);
             this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 195);
@@ -375,45 +343,42 @@
             this.flowLayoutPanel4.Size = new System.Drawing.Size(434, 90);
             this.flowLayoutPanel4.TabIndex = 3;
             // 
-            // kryptonLabel4
+            // SignUpPasswordLabel
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(0, 0);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(0);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(97, 30);
-            this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
-            this.kryptonLabel4.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
-            this.kryptonLabel4.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
-            this.kryptonLabel4.StateCommon.ShortText.ColorAngle = 0F;
-            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel4.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.kryptonLabel4.StateCommon.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel4.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.kryptonLabel4.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.kryptonLabel4.StateCommon.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
-            this.kryptonLabel4.TabIndex = 7;
-            this.kryptonLabel4.Values.Text = "Mật khẩu";
+            this.SignUpPasswordLabel.Location = new System.Drawing.Point(0, 0);
+            this.SignUpPasswordLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.SignUpPasswordLabel.Name = "SignUpPasswordLabel";
+            this.SignUpPasswordLabel.Size = new System.Drawing.Size(97, 30);
+            this.SignUpPasswordLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
+            this.SignUpPasswordLabel.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
+            this.SignUpPasswordLabel.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
+            this.SignUpPasswordLabel.StateCommon.ShortText.ColorAngle = 0F;
+            this.SignUpPasswordLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpPasswordLabel.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.SignUpPasswordLabel.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
+            this.SignUpPasswordLabel.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.SignUpPasswordLabel.TabIndex = 7;
+            this.SignUpPasswordLabel.Values.Text = "Mật khẩu";
             // 
-            // kryptonTextBox4
+            // SignUpPasswordTextBox
             // 
-            this.kryptonTextBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kryptonTextBox4.Location = new System.Drawing.Point(0, 30);
-            this.kryptonTextBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.PasswordChar = '●';
-            this.kryptonTextBox4.Size = new System.Drawing.Size(434, 47);
-            this.kryptonTextBox4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.kryptonTextBox4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.SignUpPasswordTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.SignUpPasswordTextBox.Location = new System.Drawing.Point(0, 30);
+            this.SignUpPasswordTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.SignUpPasswordTextBox.Name = "SignUpPasswordTextBox";
+            this.SignUpPasswordTextBox.PasswordChar = '●';
+            this.SignUpPasswordTextBox.Size = new System.Drawing.Size(434, 47);
+            this.SignUpPasswordTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.SignUpPasswordTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox4.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonTextBox4.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox4.StateCommon.Border.Width = 2;
-            this.kryptonTextBox4.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox4.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonTextBox4.TabIndex = 8;
-            this.kryptonTextBox4.UseSystemPasswordChar = true;
-            this.kryptonTextBox4.WordWrap = false;
+            this.SignUpPasswordTextBox.StateCommon.Border.Rounding = 20;
+            this.SignUpPasswordTextBox.StateCommon.Border.Width = 2;
+            this.SignUpPasswordTextBox.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpPasswordTextBox.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
+            this.SignUpPasswordTextBox.TabIndex = 8;
+            this.SignUpPasswordTextBox.UseSystemPasswordChar = true;
+            this.SignUpPasswordTextBox.WordWrap = false;
             // 
             // textBox1
             // 
@@ -428,13 +393,11 @@
             this.textBox1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.textBox1.StateActive.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.textBox1.StateActive.Border.Rounding = 10;
             this.textBox1.StateActive.Border.Width = 2;
             this.textBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.textBox1.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.textBox1.StateCommon.Border.Rounding = 10;
             this.textBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.TabIndex = 7;
@@ -470,22 +433,22 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel SignUpScreenLable;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel SignUpScreenLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox textBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel SignUpFirstNameLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox SignUpLastNameTextBox;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonContextMenu kryptonContextMenu1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel SignUpLastNameLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox SignUpFirstNameTextBox;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel SignUpEmailLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox SignUpEmailTextBox;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel SignUpPasswordLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox SignUpPasswordTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonButton signUpButton;
     }
 }
