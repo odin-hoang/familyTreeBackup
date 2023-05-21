@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinformFamilyTree
 {
-    public partial class UserControl2 : UserControl
+    public partial class BiographyViewScreen : UserControl
     {
-        public UserControl2()
+        public BiographyViewScreen()
         {
             InitializeComponent();
         }

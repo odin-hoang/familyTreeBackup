@@ -22,10 +22,10 @@ namespace WinformFamilyTree
         {
             InitializeComponent();
             instance = this;
-            kryptonTextBox1.Text = "Vd: Nguyễn Văn";
-            kryptonTextBox1.StateCommon.Content.Color1 = Color.Gray;
-            kryptonTextBox2.Text = "Vd: An";
-            kryptonTextBox2.StateCommon.Content.Color1 = Color.Gray;
+            SignUpLastNameTextBox.Text = "Vd: Nguyễn Văn";
+            SignUpLastNameTextBox.StateCommon.Content.Color1 = Color.Gray;
+            SignUpFirstNameTextBox.Text = "Vd: An";
+            SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Gray;
         }
    
         private void signUpButton_Click(object sender, EventArgs e)
@@ -55,38 +55,38 @@ namespace WinformFamilyTree
 
         private void kryptonTextBox1_Enter(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "Vd: Nguyễn Văn")
+            if (SignUpLastNameTextBox.Text == "Vd: Nguyễn Văn")
             {
-                kryptonTextBox1.Text = "";
-                kryptonTextBox1.StateCommon.Content.Color1 = Color.Black;
+                SignUpLastNameTextBox.Text = "";
+                SignUpLastNameTextBox.StateCommon.Content.Color1 = Color.Black;
             }
         }
 
         private void kryptonTextBox1_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(kryptonTextBox1.Text))
+            if (string.IsNullOrWhiteSpace(SignUpLastNameTextBox.Text))
             {
-                kryptonTextBox1.Text = "Vd: Nguyễn Văn";
-                kryptonTextBox1.StateCommon.Content.Color1 = Color.Gray;
+                SignUpLastNameTextBox.Text = "Vd: Nguyễn Văn";
+                SignUpLastNameTextBox.StateCommon.Content.Color1 = Color.Gray;
             }
         }
 
 
         private void kryptonTextBox2_Enter(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "Vd: An")
+            if (SignUpFirstNameTextBox.Text == "Vd: An")
             {
-                kryptonTextBox2.Text = "";
-                kryptonTextBox2.StateCommon.Content.Color1 = Color.Black;
+                SignUpFirstNameTextBox.Text = "";
+                SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Black;
             }
         }
 
         private void kryptonTextBox2_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(kryptonTextBox2.Text))
+            if (string.IsNullOrWhiteSpace(SignUpFirstNameTextBox.Text))
             {
-                kryptonTextBox2.Text = "Vd: An";
-                kryptonTextBox2.StateCommon.Content.Color1 = Color.Gray;
+                SignUpFirstNameTextBox.Text = "Vd: An";
+                SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Gray;
             }
         }
     }
