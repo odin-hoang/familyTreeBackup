@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.SignUpScreenLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.SignInScreenLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.signInButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
@@ -52,7 +52,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.SignUpScreenLabel, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.SignInScreenLabel, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -66,23 +66,23 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1074, 623);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // SignUpScreenLabel
+            // SignInScreenLabel
             // 
-            this.SignUpScreenLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.SignUpScreenLabel.Location = new System.Drawing.Point(214, 138);
-            this.SignUpScreenLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 30);
-            this.SignUpScreenLabel.Name = "SignUpScreenLabel";
-            this.SignUpScreenLabel.Size = new System.Drawing.Size(644, 49);
-            this.SignUpScreenLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
-            this.SignUpScreenLabel.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
-            this.SignUpScreenLabel.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
-            this.SignUpScreenLabel.StateCommon.ShortText.ColorAngle = 0F;
-            this.SignUpScreenLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignUpScreenLabel.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
-            this.SignUpScreenLabel.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.SignUpScreenLabel.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.SignUpScreenLabel.TabIndex = 7;
-            this.SignUpScreenLabel.Values.Text = "PHẦN MỀM QUẢN LÝ CÂY GIA PHẢ";
+            this.SignInScreenLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SignInScreenLabel.Location = new System.Drawing.Point(214, 138);
+            this.SignInScreenLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 30);
+            this.SignInScreenLabel.Name = "SignInScreenLabel";
+            this.SignInScreenLabel.Size = new System.Drawing.Size(644, 49);
+            this.SignInScreenLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
+            this.SignInScreenLabel.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
+            this.SignInScreenLabel.StateCommon.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
+            this.SignInScreenLabel.StateCommon.ShortText.ColorAngle = 0F;
+            this.SignInScreenLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignInScreenLabel.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
+            this.SignInScreenLabel.StateCommon.ShortText.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
+            this.SignInScreenLabel.StateCommon.ShortText.MultiLineH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.SignInScreenLabel.TabIndex = 7;
+            this.SignInScreenLabel.Values.Text = "PHẦN MỀM QUẢN LÝ CÂY GIA PHẢ";
             // 
             // tableLayoutPanel2
             // 
@@ -295,7 +295,7 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel SignUpScreenLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel SignInScreenLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel SignInEmailLabel;
