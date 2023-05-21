@@ -41,5 +41,10 @@ namespace WinformFamilyTree
         {
 
         }
+
+        private void SignInEmailTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

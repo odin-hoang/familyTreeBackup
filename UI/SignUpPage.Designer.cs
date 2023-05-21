@@ -163,8 +163,9 @@
             this.SignUpLastNameTextBox.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.SignUpLastNameTextBox.TabIndex = 8;
             this.SignUpLastNameTextBox.WordWrap = false;
-            this.SignUpLastNameTextBox.Enter += new System.EventHandler(this.kryptonTextBox1_Enter);
-            this.SignUpLastNameTextBox.Leave += new System.EventHandler(this.kryptonTextBox1_Leave);
+            this.SignUpLastNameTextBox.TextChanged += new System.EventHandler(this.SignUpLastNameTextBox_TextChanged);
+            this.SignUpLastNameTextBox.Enter += new System.EventHandler(this.SignUpLastNameTextBox_Enter);
+            this.SignUpLastNameTextBox.Leave += new System.EventHandler(this.SignUpLastNameTextBox_Leave);
             // 
             // flowLayoutPanel2
             // 
@@ -211,8 +212,9 @@
             this.SignUpFirstNameTextBox.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.SignUpFirstNameTextBox.TabIndex = 8;
             this.SignUpFirstNameTextBox.WordWrap = false;
-            this.SignUpFirstNameTextBox.Enter += new System.EventHandler(this.kryptonTextBox2_Enter);
-            this.SignUpFirstNameTextBox.Leave += new System.EventHandler(this.kryptonTextBox2_Leave);
+            this.SignUpFirstNameTextBox.TextChanged += new System.EventHandler(this.SignUpFirstNameTextBox_TextChanged);
+            this.SignUpFirstNameTextBox.Enter += new System.EventHandler(this.SignUpFirstNameTextBox_Enter);
+            this.SignUpFirstNameTextBox.Leave += new System.EventHandler(this.SignUpFirstNameTextBox_Leave);
             // 
             // signUpButton
             // 
@@ -386,7 +388,7 @@
             this.textBox1.Location = new System.Drawing.Point(0, 30);
             this.textBox1.Margin = new System.Windows.Forms.Padding(0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 34);
+            this.textBox1.Size = new System.Drawing.Size(208, 35);
             this.textBox1.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(103)))), ((int)(((byte)(242)))));
             this.textBox1.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
             this.textBox1.StateActive.Border.ColorAngle = 180F;

@@ -217,6 +217,7 @@
             this.SignInEmailTextBox.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.SignInEmailTextBox.TabIndex = 8;
             this.SignInEmailTextBox.WordWrap = false;
+            this.SignInEmailTextBox.TextChanged += new System.EventHandler(this.SignInEmailTextBox_TextChanged);
             // 
             // flowLayoutPanel4
             // 
