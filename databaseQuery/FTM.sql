@@ -17,16 +17,18 @@ create table MEMBER
 
 create table RELATIONSHIP_SPOUSE
 (
-	MemberID int,
+	MemberID1 int,
 	MemberID2 int,
 	SpouseID int not null primary key,
-	constraint FK_Relationship_Spouse_Member foreign key (MemberID) references Member (MemberID),
-	constraint FK_Relationship_Spouse_Member foreign key (MemberID2) references Member (MemberID)
+	constraint FK_Relationship_Spouse_Member1 foreign key (MemberID1) references Member (MemberID),
+	constraint FK_Relationship_Spouse_Member2 foreign key (MemberID2) references Member (MemberID)
 )
 
 create table RELATIONSHIP_PARENT_CHILD
 (
-	MemberID int,
-	SpouseID int,
-	primary key (MemberID,SpouseID)
+	ChildID int,
+	ParentID int,
+	primary key (ChildID, ParentID),
+	constraint FK_Relationship_P_C_Child foreign key (ChildID) references Member (MemberID),
+	constraint FK_Relationship_P_C_Parent foreign key (ParentID) references RELATIONSHIP_SPOUSE (SpouseID),
 )
