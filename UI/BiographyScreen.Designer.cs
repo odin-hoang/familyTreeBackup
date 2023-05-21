@@ -1,6 +1,6 @@
 ﻿namespace WinformFamilyTree
 {
-    partial class UserControl2
+    partial class BiographyViewScreen
     {
         /// <summary> 
         /// Required designer variable.
@@ -35,19 +35,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(354, 224);
+            this.label1.Location = new System.Drawing.Point(266, 182);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 25);
+            this.label1.Size = new System.Drawing.Size(118, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Biography View";
             // 
-            // UserControl2
+            // BiographyViewScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(1024, 900);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "BiographyViewScreen";
+            this.Size = new System.Drawing.Size(768, 731);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -50,7 +50,7 @@ namespace WinformFamilyTree
             this.signInPage = new WinformFamilyTree.SignInPage();
             this.sharedScreen = new WinformFamilyTree.SharedScreen();
             this.memberListScreen = new WinformFamilyTree.MemberListScreen();
-            this.biographyScreen = new WinformFamilyTree.UserControl2();
+            this.biographyScreen = new WinformFamilyTree.BiographyViewScreen();
             this.homeScreen = new WinformFamilyTree.HomeScreen();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -382,7 +382,7 @@ namespace WinformFamilyTree
         private FlowLayoutPanel flowLayoutPanel2;
         private SharedScreen sharedScreen;
         private MemberListScreen memberListScreen;
-        private UserControl2 biographyScreen;
+        private BiographyViewScreen biographyScreen;
         private HomeScreen homeScreen;
         private TableLayoutPanel tableLayoutPanel2;
         private SignInPage signInPage;

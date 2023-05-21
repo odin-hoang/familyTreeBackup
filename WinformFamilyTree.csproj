@@ -34,15 +34,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ComponentFactory.Krypton.Docking">
-      <HintPath>..\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+      <HintPath>..\..\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>..\..\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
     <Reference Include="ComponentFactory.Krypton.Toolkit">
-      <HintPath>..\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+      <HintPath>..\..\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>..\..\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -72,48 +76,48 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SignInPage.cs">
+    <Compile Include="UI\SignInPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SignInPage.Designer.cs">
+    <Compile Include="UI\SignInPage.Designer.cs">
       <DependentUpon>SignInPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="FirstPage.cs">
+    <Compile Include="UI\FirstPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FirstPage.Designer.cs">
+    <Compile Include="UI\FirstPage.Designer.cs">
       <DependentUpon>FirstPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="SignUpPage.cs">
+    <Compile Include="UI\SignUpPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SignUpPage.Designer.cs">
+    <Compile Include="UI\SignUpPage.Designer.cs">
       <DependentUpon>SignUpPage.cs</DependentUpon>
     </Compile>
     <Compile Include="TreeClasses\AccountClass.cs" />
     <Compile Include="TreeClasses\MemberClass.cs" />
-    <Compile Include="HomeScreen.cs">
+    <Compile Include="UI\HomeScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HomeScreen.Designer.cs">
+    <Compile Include="UI\HomeScreen.Designer.cs">
       <DependentUpon>HomeScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="BiographyScreen.cs">
+    <Compile Include="UI\BiographyScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="BiographyScreen.Designer.cs">
+    <Compile Include="UI\BiographyScreen.Designer.cs">
       <DependentUpon>BiographyScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="MemberListScreen.cs">
+    <Compile Include="UI\MemberListScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MemberListScreen.Designer.cs">
+    <Compile Include="UI\MemberListScreen.Designer.cs">
       <DependentUpon>MemberListScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="SharedScreen.cs">
+    <Compile Include="UI\SharedScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SharedScreen.Designer.cs">
+    <Compile Include="UI\SharedScreen.Designer.cs">
       <DependentUpon>SharedScreen.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FamilyTree.resx">
@@ -129,25 +133,25 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SignInPage.resx">
+    <EmbeddedResource Include="UI\SignInPage.resx">
       <DependentUpon>SignInPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FirstPage.resx">
+    <EmbeddedResource Include="UI\FirstPage.resx">
       <DependentUpon>FirstPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SignUpPage.resx">
+    <EmbeddedResource Include="UI\SignUpPage.resx">
       <DependentUpon>SignUpPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeScreen.resx">
+    <EmbeddedResource Include="UI\HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BiographyScreen.resx">
+    <EmbeddedResource Include="UI\BiographyScreen.resx">
       <DependentUpon>BiographyScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MemberListScreen.resx">
+    <EmbeddedResource Include="UI\MemberListScreen.resx">
       <DependentUpon>MemberListScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SharedScreen.resx">
+    <EmbeddedResource Include="UI\SharedScreen.resx">
       <DependentUpon>SharedScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="memberDataSet.xsc">
