@@ -38,11 +38,6 @@ namespace WinformFamilyTree
 
         }
 
-        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -53,7 +48,7 @@ namespace WinformFamilyTree
 
         }
 
-        private void kryptonTextBox1_Enter(object sender, EventArgs e)
+        private void SignUpLastNameTextBox_Enter(object sender, EventArgs e)
         {
             if (SignUpLastNameTextBox.Text == "Vd: Nguyễn Văn")
             {
@@ -62,7 +57,7 @@ namespace WinformFamilyTree
             }
         }
 
-        private void kryptonTextBox1_Leave(object sender, EventArgs e)
+        private void SignUpLastNameTextBox_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(SignUpLastNameTextBox.Text))
             {
@@ -72,7 +67,7 @@ namespace WinformFamilyTree
         }
 
 
-        private void kryptonTextBox2_Enter(object sender, EventArgs e)
+        private void SignUpFirstNameTextBox_Enter(object sender, EventArgs e)
         {
             if (SignUpFirstNameTextBox.Text == "Vd: An")
             {
@@ -81,13 +76,23 @@ namespace WinformFamilyTree
             }
         }
 
-        private void kryptonTextBox2_Leave(object sender, EventArgs e)
+        private void SignUpFirstNameTextBox_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(SignUpFirstNameTextBox.Text))
             {
                 SignUpFirstNameTextBox.Text = "Vd: An";
                 SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Gray;
             }
+        }
+
+        private void SignUpFirstNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignUpLastNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
