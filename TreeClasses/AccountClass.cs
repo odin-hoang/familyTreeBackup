@@ -19,7 +19,7 @@ namespace WinformFamilyTree.TreeClasses
 
 
         // Connect to the database
-        static string myConnectionString = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+        static string myConnectionString = ConfigurationManager.ConnectionStrings["connstrngAccount"].ConnectionString;
 
         // Function for Selecting data from Database
         public DataTable Select()
@@ -56,12 +56,12 @@ namespace WinformFamilyTree.TreeClasses
             {
                 conn.Open();
                 // Creating SQL Command using sql and conn
-                string sql = "INSERT INTO tbl_user (FirstName, LastName, Email, Password) VALUES(@FirstName, @LastName, @Email, @Password)";
+                string sql = "INSERT INTO UserData (FirstName, LastName, Email, UserPassword) VALUES(@FirstName, @LastName, @Email, @UserPassword)";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
                 cmd.Parameters.AddWithValue("@LastName", c.LastName);
                 cmd.Parameters.AddWithValue("@Email", c.Email);
-                cmd.Parameters.AddWithValue("@Password", c.Password);
+                cmd.Parameters.AddWithValue("@UserPassword", c.Password);
                 int rows = cmd.ExecuteNonQuery();
                 // If the query run sucessfully, the value of rows will be greater than 0 else its value will be 0
                 if (rows > 0) { isSuccess = true; }
@@ -84,14 +84,14 @@ namespace WinformFamilyTree.TreeClasses
             {
                 conn.Open();
                 // Creating SQL Command using sql and conn
-                string sql = "UPDATE tbl_user " + "SET FirstName = @FirstName," + "LastName = @LastName," + "Email = @Email," + "Password = @Password," +
-                    "WHERE ID = @ID";
+                string sql = "UPDATE UserData " + "SET FirstName = @FirstName," + "LastName = @LastName," + "Email = @Email," + "UserPassword = @UserPassword," +
+                    "WHERE Email = @Email";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
                 cmd.Parameters.AddWithValue("@LastName", c.LastName);
-                cmd.Parameters.AddWithValue("@Gender", c.Email);
-                cmd.Parameters.AddWithValue("@DateOfBirth", c.Password);
-                cmd.Parameters.AddWithValue("@ID", c.ID);
+                cmd.Parameters.AddWithValue("@Email", c.Email);
+                cmd.Parameters.AddWithValue("@UserPassword", c.Password);
+      
                 int rows = cmd.ExecuteNonQuery();
                 // If the query run sucessfully, the value of rows will be greater than 0 else its value will be 0
                 if (rows > 0) { isSuccess = true; }
