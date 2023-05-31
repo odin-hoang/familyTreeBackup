@@ -25,10 +25,6 @@ namespace WinformFamilyTree
             instance = this;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void signInButton_Click(object sender, EventArgs e)
         {
@@ -63,16 +59,6 @@ namespace WinformFamilyTree
             finally { conn.Close(); }
 
 
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void signInButton_Click_1(object sender, EventArgs e)
-        {
 
         }
 

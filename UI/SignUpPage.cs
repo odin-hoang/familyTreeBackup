@@ -52,21 +52,6 @@ namespace WinformFamilyTree
             
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void kryptonContextMenu1_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
         private void SignUpLastNameTextBox_Enter(object sender, EventArgs e)
         {
             if (SignUpLastNameTextBox.Text == "Vd: Nguyễn Văn")
