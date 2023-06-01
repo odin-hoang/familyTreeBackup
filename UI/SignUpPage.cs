@@ -28,6 +28,7 @@ namespace WinformFamilyTree
         {
             InitializeComponent();
             instance = this;
+
             SignUpLastNameTextBox.Text = lastNamePlaceholder;
             SignUpLastNameTextBox.StateCommon.Content.Color1 = Color.Gray;
             SignUpFirstNameTextBox.Text = firstNamePlaceholder;

@@ -382,7 +382,6 @@
             this.SignUpPasswordTextBox.TabIndex = 8;
             this.SignUpPasswordTextBox.UseSystemPasswordChar = true;
             this.SignUpPasswordTextBox.WordWrap = false;
-         
             // 
             // SignUpPage
             // 
