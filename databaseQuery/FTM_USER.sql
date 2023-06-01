@@ -1,7 +1,7 @@
 create database FTM_USER
 use FTM_USER
 
-create table UserData
+create table USERDATA
 (
 
 	FirstName varchar(20),
