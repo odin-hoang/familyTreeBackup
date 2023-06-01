@@ -61,7 +61,6 @@ namespace WinformFamilyTree
                 SignUpLastNameTextBox.StateCommon.Content.Color1 = Color.Black;
             }
         }
-
         private void SignUpLastNameTextBox_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(SignUpLastNameTextBox.Text))
