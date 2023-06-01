@@ -34,7 +34,7 @@ namespace WinformFamilyTree
             SignUpFirstNameTextBox.Text = firstNamePlaceholder;
             SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Gray;
         }
-   
+
         private void signUpButton_Click(object sender, EventArgs e)
         {
             AccountClass c = new AccountClass();
@@ -72,7 +72,6 @@ namespace WinformFamilyTree
                 SignUpLastNameTextBox.StateCommon.Content.Color1 = Color.Gray;
             }
         }
-
 
         private void SignUpFirstNameTextBox_Enter(object sender, EventArgs e)
         {
