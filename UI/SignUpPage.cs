@@ -22,13 +22,15 @@ namespace WinformFamilyTree
         public TextBox emailTextBox;
         public TextBox passwordTextBox;
         static string myConnectionString = ConfigurationManager.ConnectionStrings["connstrngAccount"].ConnectionString;
+        string lastNamePlaceholder = "Vd: Nguyễn Văn";
+        string firstNamePlaceholder = "Vd: An";
         public SignUpPage()
         {
             InitializeComponent();
             instance = this;
-            SignUpLastNameTextBox.Text = "Vd: Nguyễn Văn";
+            SignUpLastNameTextBox.Text = lastNamePlaceholder;
             SignUpLastNameTextBox.StateCommon.Content.Color1 = Color.Gray;
-            SignUpFirstNameTextBox.Text = "Vd: An";
+            SignUpFirstNameTextBox.Text = firstNamePlaceholder;
             SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Gray;
         }
    
@@ -54,7 +56,7 @@ namespace WinformFamilyTree
 
         private void SignUpLastNameTextBox_Enter(object sender, EventArgs e)
         {
-            if (SignUpLastNameTextBox.Text == "Vd: Nguyễn Văn")
+            if (SignUpLastNameTextBox.Text == lastNamePlaceholder)
             {
                 SignUpLastNameTextBox.Text = "";
                 SignUpLastNameTextBox.StateCommon.Content.Color1 = Color.Black;
@@ -65,7 +67,7 @@ namespace WinformFamilyTree
         {
             if (string.IsNullOrWhiteSpace(SignUpLastNameTextBox.Text))
             {
-                SignUpLastNameTextBox.Text = "Vd: Nguyễn Văn";
+                SignUpLastNameTextBox.Text = lastNamePlaceholder;
                 SignUpLastNameTextBox.StateCommon.Content.Color1 = Color.Gray;
             }
         }
@@ -73,7 +75,7 @@ namespace WinformFamilyTree
 
         private void SignUpFirstNameTextBox_Enter(object sender, EventArgs e)
         {
-            if (SignUpFirstNameTextBox.Text == "Vd: An")
+            if (SignUpFirstNameTextBox.Text == firstNamePlaceholder)
             {
                 SignUpFirstNameTextBox.Text = "";
                 SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Black;
@@ -84,7 +86,7 @@ namespace WinformFamilyTree
         {
             if (string.IsNullOrWhiteSpace(SignUpFirstNameTextBox.Text))
             {
-                SignUpFirstNameTextBox.Text = "Vd: An";
+                SignUpFirstNameTextBox.Text = firstNamePlaceholder;
                 SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Gray;
             }
         }
