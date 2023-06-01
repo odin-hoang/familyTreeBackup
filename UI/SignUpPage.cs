@@ -42,7 +42,7 @@ namespace WinformFamilyTree
             c.Email = SignUpEmailTextBox.Text;
             c.Password = SignUpPasswordTextBox.Text;
             bool success = c.Insert(c);
-            if (success)
+            if(success)
             {
                 MessageBox.Show("Đăng ký thành công!");
                 // load to next page
