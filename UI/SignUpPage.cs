@@ -33,7 +33,6 @@ namespace WinformFamilyTree
             SignUpFirstNameTextBox.Text = firstNamePlaceholder;
             SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Gray;
         }
-
         private void signUpButton_Click(object sender, EventArgs e)
         {
             AccountClass c = new AccountClass();
@@ -53,7 +52,6 @@ namespace WinformFamilyTree
             }
 
         }
-
         private void SignUpLastNameTextBox_Enter(object sender, EventArgs e)
         {
             if (SignUpLastNameTextBox.Text == lastNamePlaceholder)
@@ -62,7 +60,6 @@ namespace WinformFamilyTree
                 SignUpLastNameTextBox.StateCommon.Content.Color1 = Color.Black;
             }
         }
-
         private void SignUpLastNameTextBox_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(SignUpLastNameTextBox.Text))
@@ -71,8 +68,6 @@ namespace WinformFamilyTree
                 SignUpLastNameTextBox.StateCommon.Content.Color1 = Color.Gray;
             }
         }
-
-
         private void SignUpFirstNameTextBox_Enter(object sender, EventArgs e)
         {
             if (SignUpFirstNameTextBox.Text == firstNamePlaceholder)
@@ -81,7 +76,6 @@ namespace WinformFamilyTree
                 SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Black;
             }
         }
-
         private void SignUpFirstNameTextBox_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(SignUpFirstNameTextBox.Text))
@@ -90,12 +84,10 @@ namespace WinformFamilyTree
                 SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Gray;
             }
         }
-
         private void SignUpFirstNameTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
-
         private void SignUpLastNameTextBox_TextChanged(object sender, EventArgs e)
         {
 
