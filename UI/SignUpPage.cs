@@ -51,7 +51,6 @@ namespace WinformFamilyTree
             {
                 MessageBox.Show("Lỗi, hãy thử lại!");
             }
-            
         }
         private void SignUpLastNameTextBox_Enter(object sender, EventArgs e)
         {
