@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using WinformFamilyTree.TreeClasses;
 
 namespace WinformFamilyTree
 {
@@ -18,6 +20,7 @@ namespace WinformFamilyTree
         public TextBox firstNameTextBox;
         public TextBox emailTextBox;
         public TextBox passwordTextBox;
+        static string myConnectionString = ConfigurationManager.ConnectionStrings["connstrngAccount"].ConnectionString;
         string lastNamePlaceholder = "Vd: Nguyễn Văn";
         string firstNamePlaceholder = "Vd: An";
         public SignUpPage()
@@ -30,24 +33,24 @@ namespace WinformFamilyTree
             SignUpFirstNameTextBox.Text = firstNamePlaceholder;
             SignUpFirstNameTextBox.StateCommon.Content.Color1 = Color.Gray;
         }
-   
+
         private void signUpButton_Click(object sender, EventArgs e)
         {
-            familyTree.instance.formSubmit_SignUp(sender, e);
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void kryptonContextMenu1_Opening(object sender, CancelEventArgs e)
-        {
+            AccountClass c = new AccountClass();
+            c.FirstName = SignUpFirstNameTextBox.Text;
+            c.LastName = SignUpLastNameTextBox.Text;
+            c.Email = SignUpEmailTextBox.Text;
+            c.Password = SignUpPasswordTextBox.Text;
+            bool success = c.Insert(c);
+            if (success)
+            {
+                MessageBox.Show("Đăng ký thành công!");
+                // load to next page
+            }
+            else
+            {
+                MessageBox.Show("Lỗi, hãy thử lại!");
+            }
 
         }
 
