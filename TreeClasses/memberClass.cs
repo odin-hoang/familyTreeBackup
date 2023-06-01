@@ -21,7 +21,7 @@ namespace WinformFamilyTree.TreeClasses
         public string Biography { get; set; }
 
         // Connect to the database
-        static string myConnectionString = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+        static string myConnectionString = ConfigurationManager.ConnectionStrings["connstrngMember"].ConnectionString;
 
         // Function for Selecting data from Database
         public DataTable Select()
@@ -33,7 +33,7 @@ namespace WinformFamilyTree.TreeClasses
             {
                 conn.Open();
                 // Creating SQL Command using sql and connection
-                string sql = "SELECT * FROM tbl_member";
+                string sql = "SELECT * FROM MEMBER";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 // Creating Adapter using cmd
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -58,15 +58,13 @@ namespace WinformFamilyTree.TreeClasses
             {
                 conn.Open();
                 // Creating SQL Command using sql and conn
-                string sql = "INSERT INTO tbl_member (FirstName, LastName, Gender, DateOfBirth, DateOfDeath, PlaceOfOrigin, Biography) VALUES(@FirstName, @LastName, @Gender, @DateOfBirth, @DateOfDeath, @PlaceOfOrigin, @Biography)";
+                string sql = "INSERT INTO MEMBER (FirstName, LastName, Gender, DateOfBirth, PlaceOfOrigin) VALUES(@FirstName, @LastName, @Gender, @DateOfBirth, @PlaceOfOrigin)";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
                 cmd.Parameters.AddWithValue("@LastName", c.LastName);
                 cmd.Parameters.AddWithValue("@Gender", c.Gender);
                 cmd.Parameters.AddWithValue("@DateOfBirth", c.DateOfBirth);
-                cmd.Parameters.AddWithValue("@DateOfDeath", c.DateOfDeath);
                 cmd.Parameters.AddWithValue("@PlaceOfOrigin", c.PlaceOfOrigin);
-                cmd.Parameters.AddWithValue("@Biography", c.Biography);
                 int rows = cmd.ExecuteNonQuery();
                 // If the query run sucessfully, the value of rows will be greater than 0 else its value will be 0
                 if (rows > 0) { isSuccess = true; }
@@ -89,25 +87,16 @@ namespace WinformFamilyTree.TreeClasses
             {
                 conn.Open();
                 // Creating SQL Command using sql and conn
-                string sql = "UPDATE tbl_member " +
-                    "SET FirstName = @FirstName," +
-                    "LastName = @LastName," +
-                    "Gender = @Gender," +
-                    "DateOfBirth = @DateOfBirth," +
-                    "DateOfDeath = @DateOfDeath, " +
-                    "PlaceOfOrigin = @PlaceOfOrigin, " +
-                    "Biography = @Biography" +
-                    "WHERE " +
-                    "ID = @ID";
+
+                string sql = "UPDATE MEMBER SET FirstName = @FirstName, LastName = @LastName, DateOfBirt = @DateOfBirt, Gender = @Gender, PlaceOfOrigin = @PlaceOfOrigin, Email = @Email WHERE MemberID = @MemberID";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
                 cmd.Parameters.AddWithValue("@LastName", c.LastName);
                 cmd.Parameters.AddWithValue("@Gender", c.Gender);
                 cmd.Parameters.AddWithValue("@DateOfBirth", c.DateOfBirth);
-                cmd.Parameters.AddWithValue("@DateOfDeath", c.DateOfDeath);
                 cmd.Parameters.AddWithValue("@PlaceOfOrigin", c.PlaceOfOrigin);
                 cmd.Parameters.AddWithValue("@Biography", c.Biography);
-                cmd.Parameters.AddWithValue("@ID", c.ID);
+                cmd.Parameters.AddWithValue("@MemberID", c.ID);
                 int rows = cmd.ExecuteNonQuery();
                 // If the query run sucessfully, the value of rows will be greater than 0 else its value will be 0
                 if (rows > 0) { isSuccess = true; }
@@ -130,7 +119,7 @@ namespace WinformFamilyTree.TreeClasses
             {
                 conn.Open();
                 // Creating SQL Command using sql and conn
-                string sql = "DELETE FROM tbl_member WHERE ID = @ID";
+                string sql = "DELETE FROM MEMBER WHERE MemberID = @ID";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@ID", c.ID);
                 int rows = cmd.ExecuteNonQuery();
