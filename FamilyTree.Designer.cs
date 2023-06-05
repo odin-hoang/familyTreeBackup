@@ -104,11 +104,11 @@ namespace WinformFamilyTree
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.tableLayoutPanel2.ColumnCount = 5;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel2, 5);
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel2.Controls.Add(this.AvatarPictureBox, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.userNameLabel, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 1, 4);
@@ -146,7 +146,7 @@ namespace WinformFamilyTree
             this.userNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel2.SetColumnSpan(this.userNameLabel, 3);
             this.userNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userNameLabel.Location = new System.Drawing.Point(27, 247);
+            this.userNameLabel.Location = new System.Drawing.Point(29, 247);
             this.userNameLabel.Name = "userNameLabel";
             this.userNameLabel.Size = new System.Drawing.Size(285, 50);
             this.userNameLabel.TabIndex = 1;
@@ -161,7 +161,7 @@ namespace WinformFamilyTree
             this.flowLayoutPanel1.Controls.Add(this.memberListButton);
             this.flowLayoutPanel1.Controls.Add(this.sharedButton);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(24, 327);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(26, 327);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(291, 273);
@@ -195,6 +195,7 @@ namespace WinformFamilyTree
             this.viewBiographyButton.Text = "Xem tiểu sử";
             this.viewBiographyButton.UseVisualStyleBackColor = false;
             this.viewBiographyButton.Click += new System.EventHandler(this.viewBiographyButton_Click);
+            this.viewBiographyButton.MouseCaptureChanged += new System.EventHandler(this.viewBiographyButton_onClick);
             // 
             // memberListButton
             // 
@@ -209,6 +210,7 @@ namespace WinformFamilyTree
             this.memberListButton.Text = "Danh sách thành viên";
             this.memberListButton.UseVisualStyleBackColor = false;
             this.memberListButton.Click += new System.EventHandler(this.memberListButton_Click);
+            this.memberListButton.MouseCaptureChanged += new System.EventHandler(this.memberListbutton_onClick);
             // 
             // sharedButton
             // 
@@ -223,6 +225,7 @@ namespace WinformFamilyTree
             this.sharedButton.Text = "Chia sẻ cây";
             this.sharedButton.UseVisualStyleBackColor = false;
             this.sharedButton.Click += new System.EventHandler(this.shareButton_Click);
+            this.sharedButton.MouseCaptureChanged += new System.EventHandler(this.sharedButton_onClick);
             // 
             // flowLayoutPanel2
             // 

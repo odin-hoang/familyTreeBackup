@@ -25,21 +25,6 @@ namespace WinformFamilyTree
         // Declaring a variable to submit a sign up form to database
         public void formSubmit_SignUp(object sender, EventArgs e)
         {
-            AccountClass c = new AccountClass();
-            c.FirstName = SignUpPage.instance.firstNameTextBox.Text;
-            c.LastName = SignUpPage.instance.lastNameTextBox.Text;
-            c.Email = SignUpPage.instance.emailTextBox.Text;
-            c.Password = SignUpPage.instance.passwordTextBox.Text;
-            bool success = c.Insert(c);
-            if (success)
-            {
-                MessageBox.Show("Đăng ký tài khoản thành công!");
-            } else
-            {
-                MessageBox.Show("Vui lòng thử lại!");
-            }
-            DataTable dt = c.Select();
-            MemberListScreen.instance.dtg.DataSource = dt;
 
         }
         public familyTree()
@@ -75,7 +60,12 @@ namespace WinformFamilyTree
             tableLayoutPanel3.Paint += tableLayoutPanel3_Paint;
             AvatarPictureBox.Paint += AvatarPictureBox_Paint;
             Nutchinhsua.Paint += Nutchinhsua_Paint;
+            homeScreenButton.Paint += homeScreenButton_Paint;
+            viewBiographyButton.Paint += viewBiographyButton_Paint;
+            memberListButton.Paint += memberListButton_Paint;
+            sharedButton.Paint += sharedButton_Paint;
         }
+
 
         //---------------code chỉnh sửa-------------------
 
@@ -148,6 +138,22 @@ namespace WinformFamilyTree
         private void Nutchinhsua_Paint(object sender, EventArgs e)
         {
             botronnut(Nutchinhsua);
+        }
+        private void homeScreenButton_Paint(object sender, PaintEventArgs e)
+        {
+            botronnut(homeScreenButton);
+        }
+        private void viewBiographyButton_Paint(Object sender, PaintEventArgs e)
+        {
+            botronnut(viewBiographyButton);
+        }
+        private void memberListButton_Paint(object obj, PaintEventArgs e)
+        {
+            botronnut(memberListButton);
+        }
+        private void sharedButton_Paint(object obj, PaintEventArgs e)
+        {
+            botronnut(sharedButton);
         }
         //--------------------------------------------
         private void searchBox_TextChanged(object sender, EventArgs e)
@@ -239,11 +245,6 @@ namespace WinformFamilyTree
         {
 
         }
-
-        private void homeScreenButton_TabStopChanged(object sender, EventArgs e)
-        {
-
-        }
         Color mainColor = Color.FromArgb(137, 170, 255);
 
 
@@ -253,13 +254,78 @@ namespace WinformFamilyTree
             homeScreenButton.BackColor = Color.White;
             homeScreenButton.ForeColor = mainColor;
             homeScreenButton.Font = new Font(homeScreenButton.Font, FontStyle.Bold);
+            
+            viewBiographyButton.BackColor = mainColor;
+            viewBiographyButton.ForeColor = Color.White;
+            viewBiographyButton.Font = new Font(viewBiographyButton.Font, FontStyle.Regular);
+
+            memberListButton.BackColor = mainColor;
+            memberListButton.ForeColor = Color.White;
+            memberListButton.Font = new Font(memberListButton.Font, FontStyle.Regular);
+
+            sharedButton.BackColor = mainColor;
+            sharedButton.ForeColor = Color.White;
+            sharedButton.Font = new Font(sharedButton.Font, FontStyle.Regular);
 
         }
-
-        private void signUpPage2_Load(object sender, EventArgs e)
+        private void viewBiographyButton_onClick(Object sender, EventArgs e)
         {
-       
+            viewBiographyButton.BackColor = Color.White;
+            viewBiographyButton.ForeColor = mainColor;
+            viewBiographyButton.Font = new Font(viewBiographyButton.Font, FontStyle.Bold);
+
+            memberListButton.BackColor = mainColor;
+            memberListButton.ForeColor = Color.White;
+            memberListButton.Font = new Font(memberListButton.Font, FontStyle.Regular);
+
+            sharedButton.BackColor = mainColor;
+            sharedButton.ForeColor = Color.White;
+            sharedButton.Font = new Font(sharedButton.Font, FontStyle.Regular);
+
+
+            homeScreenButton.BackColor = mainColor;
+            homeScreenButton.ForeColor = Color.White;
+            homeScreenButton.Font = new Font(homeScreenButton.Font, FontStyle.Regular);
         }
+        private void memberListbutton_onClick(object sender, EventArgs e)
+        {
+            memberListButton.BackColor = Color.White;
+            memberListButton.ForeColor = mainColor;
+            memberListButton.Font = new Font(memberListButton.Font, FontStyle.Bold);
+
+            sharedButton.BackColor = mainColor;
+            sharedButton.ForeColor = Color.White;
+            sharedButton.Font = new Font(sharedButton.Font, FontStyle.Regular);
+
+
+            homeScreenButton.BackColor = mainColor;
+            homeScreenButton.ForeColor = Color.White;
+            homeScreenButton.Font = new Font(homeScreenButton.Font, FontStyle.Regular);
+
+            viewBiographyButton.BackColor = mainColor;
+            viewBiographyButton.ForeColor = Color.White;
+            viewBiographyButton.Font = new Font(viewBiographyButton.Font, FontStyle.Regular);
+        }
+        private void sharedButton_onClick(object sender, EventArgs e)
+        {
+            sharedButton.BackColor = Color.White;
+            sharedButton.ForeColor = mainColor;
+            sharedButton.Font = new Font(sharedButton.Font, FontStyle.Bold);
+
+            homeScreenButton.BackColor = mainColor;
+            homeScreenButton.ForeColor = Color.White;
+            homeScreenButton.Font = new Font(homeScreenButton.Font, FontStyle.Regular);
+
+            viewBiographyButton.BackColor = mainColor;
+            viewBiographyButton.ForeColor = Color.White;
+            viewBiographyButton.Font = new Font(viewBiographyButton.Font, FontStyle.Regular);
+
+            memberListButton.BackColor = mainColor;
+            memberListButton.ForeColor = Color.White;
+            memberListButton.Font = new Font(memberListButton.Font, FontStyle.Regular);
+        }
+
+
         
        
     }
